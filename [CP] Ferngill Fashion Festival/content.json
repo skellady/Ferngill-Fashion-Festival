@@ -1,0 +1,274 @@
+{
+  "Format": "2.0.0",
+  "ConfigSchema": {
+    "ModJamMode": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "Description": "Removes the special order and event requirements for the fashion festival so that it will be present from the beginning, for people who want to access the content faster."
+    },
+    "ModShopsPostFestival": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "Description": "Toggles whether stalls added for compatibility with other mods such as Lumisteria Clothes will be present every year or will only turn up after you've visited the festival at least once."
+    }
+  },
+  /*"CustomLocations": [
+    {
+      "Name": "Custom_FF_FashionShow",
+      "FromMapFile": "Assets/Maps/FashionShow.tmx"
+    }
+  ],*/
+
+  "Changes": [
+    {
+      "LogName": "Load Show Map",
+      "Action": "Load",
+      "Target": "Maps/Custom_FF_FashionShow",
+      "FromFile": "Assets/Maps/FashionShow.tmx"
+    },
+    {
+      "LogName": "Location Data",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "Custom_FF_FashionShow": {
+          "CreateOnLoad": {
+            "MapPath": "Maps/Custom_FF_FashionShow"
+          },
+          "DisplayName": "{{i18n:Location.FashionShow}}",
+          "ExcludeFromNpcPathfinding": true
+        }
+      }
+    },
+    {
+      "LogName": "Loading Temp Actors",
+      "Action": "Load",
+      "Target": "Characters/FFFHatmouse, Portraits/FFFHatmouse, Characters/FFFJonghyuk, Portraits/FFFJonghyuk, Characters/FFFRose, Portraits/FFFRose, Characters/AlexOutfit1, Portraits/AlexOutfit1, Characters/AlexOutfit2, Portraits/AlexOutfit2, Characters/AlexOutfit3, Portraits/AlexOutfit3, Characters/HaleyOutfit1, Portraits/HaleyOutfit1, Characters/HaleyOutfit2, Portraits/HaleyOutfit2, Characters/HaleyOutfit3, Portraits/HaleyOutfit3, Characters/YsabelleOutfit1, Portraits/YsabelleOutfit1, Characters/YsabelleOutfit2, Portraits/YsabelleOutfit2, Characters/YsabelleOutfit3, Portraits/YsabelleOutfit3, Characters/JericOutfit1, Portraits/JericOutfit1, Characters/JericOutfit2, Portraits/JericOutfit2, Characters/JericOutfit3, Portraits/JericOutfit3",
+      "FromFile": "assets/{{Target}}.png"
+    },
+    {
+      "LogName": "Include Festival Data",
+      "Action": "Include",
+      "FromFile": "Data/Festival/FestivalDialogue.json, Data/Festival/FestivalData.json, Data/Festival/FestivalLocations.json"
+    },
+    {
+      "LogName": "Include Patches",
+      "Action": "Include",
+      "FromFile": "Data/MapData/MapPatches.json"
+    },
+    {
+      "LogName": "Include Event Data",
+      "Action": "Include",
+      "FromFile": "Data/Events/EventData.json"
+    },
+    {
+      "LogName": "Include Dialogue",
+      "Action": "Include",
+      "FromFile": "Data/Dialogue/Dialogue.json"
+    },
+    {
+      "LogName": "Include Special Orders",
+      "Action": "Include",
+      "FromFile": "Data/SpecialOrders/SpecialOrders.json"
+    },
+    {
+      "LogName": "Include DSV Compat",
+      "Action": "Include",
+      "FromFile": "Data/Compatibility/DSV.json",
+      "When": {
+        "HasMod |contains= DSV.Core": true
+      }
+    },
+    {
+      "LogName": "Include Shops",
+      "Action": "Include",
+      "FromFile": "Data/Shops/Shops.json, Data/Shops/CompatShops.json"
+    },
+    {
+      "LogName": "Include Furniture Data",
+      "Action": "Include",
+      "FromFile": "Data/Furniture/Furniture.json"
+    },
+    // Yri Sprites & Portraits
+    {
+      "LogName": "Loading Yri Fashion Festival Outfits",
+      "Action": "EditImage",
+      "Target": "Characters/Yri, Portraits/Yri",
+      "FromFile": "assets/{{Target}}_{{season}}.png",
+      "When": {
+        "HasFlag |contains= FashionShowComplete": true,
+        "Season |contains= winter": false,
+        "Day |contains= 10, 20": true,
+        "HasMod |contains=yri.yri": true
+      }
+    }
+  ],
+
+  "DynamicTokens": [
+    {
+      "Name": "MarigoldTalk",
+      "Value": ""
+    },
+    {
+      "Name": "MarigoldTalk",
+      "Value": ".Talk",
+      "When": {
+        "HasMod |contains=tiakall.jortsandjean": "true"
+      }
+    },
+
+    {
+      "Name": "PostFestival",
+      "Value": ""
+    },
+    {
+      "Name": "PostFestival",
+      "Value": ".Y2",
+      "When": {
+        "HasFlag |contains= FashionShowComplete": true,
+      }
+    },
+
+    {
+      "Name": "PostFestivalShops",
+      "Value": "true"
+    },
+    {
+      "Name": "PostFestivalShops",
+      "Value": "false",
+      "When": {
+        "HasFlag |contains= FashionShowComplete": false,
+        "ModShopsPostFestival": "true"
+      }
+    },
+    {
+      "Name": "PostFestivalShops",
+      "Value": "true",
+      "When": {
+        "HasFlag |contains= FashionShowComplete": true,
+        "ModShopsPostFestival": "true"
+      }
+    },
+
+    {
+      "Name": "EventOneModJamConditions",
+      "Value": "/e 50"
+    },
+    {
+      "Name": "EventOneModJamConditions",
+      "Value": "",
+      "When": {
+        "ModJamMode": "true",
+      }
+    },
+
+    {
+      "Name": "EventTwoModJamConditions",
+      "Value": "/f Emily 1000"
+    },
+    {
+      "Name": "EventTwoModJamConditions",
+      "Value": "",
+      "When": {
+        "ModJamMode": "true",
+      }
+    },
+
+    {
+      "Name": "EventTwoLUTICompat",
+      "Value": "6 0 0 2 2"
+    },
+    {
+      "Name": "EventTwoLUTICompat",
+      "Value": "7 0 0 3 4",
+      "When": {
+        "HasMod |contains= uglynt.town.interiors": true
+      }
+    },
+
+    //2 heart event
+
+    // {{FashionEmily1}}
+    {
+      "Name": "FashionEmily1",
+      "Value": "{{i18n:event-1740402.03}}"
+    },
+
+    {
+      "Name": "FashionEmily1",
+      "Value": "{{i18n:event-1740402.03.RSV}}",
+      "When": {
+        "HasMod |contains=Rafseazz.RSVCP": "true"
+      }
+    },
+
+    // {{FashionEmily2}}
+    {
+      "Name": "FashionEmily2",
+      "Value": "quickQuestion #{{i18n:event-1740402.04}}#{{i18n:event-1740402.05}}(break)addMailReceived FashionShowHaley\\speak Haley \"{{i18n:event-1740402.06}}\"(break)addMailReceived FashionShowAlex\\speak Haley \"{{i18n:event-1740402.07}}\"/pause 1000"
+    },
+
+    {
+      "Name": "FashionEmily2",
+      "Value": "quickQuestion #{{i18n:event-1740402.04}}#{{i18n:event-1740402.05}}#{{i18n:event-1740402.10}}#{{i18n:event-1740402.11}}(break)addMailReceived FashionShowHaley\\speak Haley \"{{i18n:event-1740402.06}}\"(break)addMailReceived FashionShowAlex\\speak Haley \"{{i18n:event-1740402.07}}\"(break)addMailReceived FashionShowYsabelle\\speak Haley \"{{i18n:event-1740402.12}}\"(break)addMailReceived FashionShowJeric\\speak Haley \"{{i18n:event-1740402.13}}\"/pause 1000",
+      "When": {
+        "HasMod |contains=Rafseazz.RSVCP": "true"
+      }
+    },
+        // {{FashionModel}}
+    {
+        "Name": "FashionModel",
+          "Value": ""
+    },
+    {
+        "Name": "FashionModel",
+        "Value": "Haley",
+        "When": 
+        {
+            "HasFlag |contains=FashionShowHaley": true
+        }
+    },
+    {
+      "Name": "FashionModel",
+      "Value": "Alex",
+      "When": 
+      {
+          "HasFlag |contains=FashionShowAlex": true
+      }
+    },
+    {
+      "Name": "FashionModel",
+      "Value": "Jeric",
+      "When": 
+      {
+          "HasFlag |contains=FashionShowJeric": true
+      }
+    },
+    {
+      "Name": "FashionModel",
+      "Value": "Ysabelle",
+      "When": 
+      {
+          "HasFlag |contains=FashionShowYsabelle": true
+      }
+    },
+    {
+      "Name": "FashionModel",
+      "Value": "{{Random: Haley, Alex}}",
+      "When": 
+      {
+          "HasFlag |contains= FashionShowComplete": true,
+      }
+    },
+    {
+      "Name": "FashionModel",
+      "Value": "{{Random: Haley, Alex, Jeric, Ysabelle}}",
+      "When": 
+      {
+          "HasFlag |contains= FashionShowComplete": true,
+          "HasMod |contains=Rafseazz.RSVCP": "true"
+      }
+    }
+  ]
+}
+

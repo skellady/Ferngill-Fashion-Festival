@@ -1,0 +1,423 @@
+{
+    // CONFIG OPTIONS
+    //--------------    
+	
+	"config.ModJamMode.name": "Mod Jam Mode",
+	"config.ModJamMode.description": "Removes the special order and event requirements for the fashion festival so that it will be present from the beginning, for people who want to access the content faster.",
+	"config.ModJamMode.values.True": "True",
+	"config.ModJamMode.values.False": "False",
+	
+	"config.ModShopsPostFestival.name": "Mod Shops Post Festival",
+	"config.ModShopsPostFestival.description": "Toggles whether stalls added for compatibility with other mods such as Lumisteria Clothes will be present every year or will only turn up after you've visited the festival at least once.",
+	"config.ModShopsPostFestival.values.True": "True",
+	"config.ModShopsPostFestival.values.False": "False",
+
+    // EVENT DIALOGUE
+    //--------------
+
+    "event-1740401.01": "So Elliott and I were walking down the shore and I started thinking about the ebb and flow of the waves...#$b#The movement of the ocean inspired me, so I doodled this down on a napkin. What do you think?$h",
+    "event-1740401.02": "Oh, it's got a wonderful flow to it!$h#$b#I can really see the influence of the waves. I can't wait to see it in three dimensions.",
+    "event-1740401.03": "Thanks!",
+    "event-1740401.04": "Hi. It's a bit crowded today, but take a seat.",
+    "event-1740401.05": "Would you like to come over and see the WIP sometime? I feel like you really get my art.",
+    "event-1740401.06": "I'd love that! You've inspired me, too. Maybe I should try my hand at something ocean-themed as well?#$b#Elliott's definitely right about the ocean's beauty! The color, the sound, the movement... they're all so relaxing.$1",
+    "event-1740401.07": "You totally should! Elliott's doing marine themes in his book, too.$h#$b#I was thinking of displaying this piece in my program when it's done.",
+    "event-1740401.08": "Oh! Hey, @!$h#$b#Sorry, we didn't see you there. Just talking shop.$h",
+    "event-1740401.09": "Did you want to order something?",
+    "event-1740401.10": "I was just enjoying the shop talk.",
+    "event-1740401.11": "Could I get a plate of spaghetti?",
+    "event-1740401.12": "Hey, it's rude to eavesdrop, you know!$h",
+    "event-1740401.13": "Oh! Sure, I'll put that in for you.",
+    "event-1740401.14": "I didn't know you were that interested in art, @.",
+    "event-1740401.15": "Yeah, @ gave me some advice not too long ago. That's why I'm hosting an art event.",
+    "event-1740401.16": "Hey, @, Leah. I was thinking...$3#$b#I'd like to make my clothing more available to others. But I don't really know how to sell things.$3",
+    "event-1740401.17": "Hmm, that's tricky, huh?$2#$b#It's not like art where you can just see it and feel something.$2#$b#You really need to be able to touch or see them in action on a body to really get it.",
+    "event-1740401.18": "Oh! That's it!$h#$b#Emily, you could do a fashion show!$h#$b#Put on a big event and invite all the neighboring towns, put your clothes out for sale where people can see them, and have a model or two show them off.#$b#If nothing else, I bet it'd be a lot of fun to see people getting interested in fashion!",
+    "event-1740401.19": "That's a really interesting idea, Leah.$h#$b#I'll have to give it some serious thought. Thank you.",
+    "event-1740401.20": "Hey, that's what art friends are for!$h#$b#And honorary art friends. Right, @?",
+
+    "event-1740402.01": "Oh, @! Just the honorary art friend I needed. Do you have a moment?$h",
+    "event-1740402.02": "I've started doing some designs for the fashion show.#$b#{{FashionEmily1}}#$b#But I could use some good @-style advice.$h#$b#I need to ask someone to model for me, but I'm not sure who. And I'd also like to record the event somehow...$3#$b#I'd love to ask you, but I'm sure you're busy...$s",
+    "event-1740402.04": "Why not ask Haley to model? Shane could videotape the event.",
+    "event-1740402.05": "Why not ask Alex to model? Haley could take pictures.",
+    "event-1740402.06": "Hmm... Well, I guess I wouldn't mind, as long as you don't put me in anything weird.$3#$b#It would be pretty fun to dress up for a bunch of people.",
+    "event-1740402.07": "Hmm... Well, I could probably talk Alex into that for you.#3#$b#It would be pretty fun to take pictures of such a colorful event.",
+    "event-1740402.08": "You're the best, Haley! I love you!",
+    "event-1740402.09": "Thanks, @. It really feels like this is starting to come together.",
+    
+    "event-1740402.03": "I was up until 2AM last night sketching, heh.$4",
+    "event-1740402.03.RSV": "Faye and I had a sleepover and we were up until 2AM sketching, heh.$4",
+    
+    "event-1740402.10": "Why not ask Ysabelle to model? Shane could videotape the event.",
+    "event-1740402.11": "Why not ask Jeric to model? Haley could take pictures.",
+    "event-1740402.12": "What, are you worried about me feeling left out or something?$3#$b#I'll take pictures even if Shane is recording. There's no way I'll be missing such a colorful event.#$b#I'll talk to Ysabelle for you. I'm sure she'd be interested.",
+    "event-1740402.13": "Hmm... Well, I could probably talk Jeric into that for you.$3#$b#It would be pretty fun to take pictures of such a colorful event.#$b#I'm sure Jeric would practically beg you to let him be a model, it won't take much convincing.$h",
+
+    "event-1740403.01": "Good morning, @! Your farm is looking lovely.#$b#I wish I had an excuse to visit more often!$1",
+    "event-1740403.02": "Just wanted to ask you for help in getting some materials needed for the fashion show.#$b#I could always put a request on the board, buuut you're the most reliable person in Pelican Town when it comes to these kinds of things.#$b#I'll make it worth your while! With your help, I know we can make this fashion show a reality!$1",
+
+    "event-1740404.01": "\\\"Psst, poke!\\\"",
+    "event-1740404.02": "\\\"Over here, poke! This way!\\\"",
+    "event-1740404.03": "It's a box...?",
+    "event-1740404.04": "Poke.",
+    "event-1740404.05": "Hi, poke. Me glad to see you.",
+    "event-1740404.06": "Me like box. Nice, cozy, and good hiding spot!$h",
+    "event-1740404.07": "Me heard about clothes-show in town. Me wants to sell too, but...#$b#Me thinks villagers would be afraid, poke.$2",
+    "event-1740404.08": "You could wear a disguise.",
+    "event-1740404.09": "I think you'll be fine.",
+    "event-1740404.10": "Thanks, poke. Me will think about it.$3#$b#Farmer make clothes too?",
+    "event-1740404.11": "Ah, so farmer help? Me help too, poke.[428][428]",
+    "event-1740404.12": "Me will watch show. Hope it fun, poke.",
+    
+    "event-1740404.13": "Thanks, poke. Me will think about it--",
+    "event-1740404.14": "Big Brooooootherrrrr!$5",
+    "event-1740404.15": "Weren't YOU the one who told me @ is trustworthy?$5#$b#And that all humans aren't scary like that big ol' Morris fella?$5",
+    "event-1740404.16": "R-Rose... poke.$2",
+    "event-1740404.17": "I think you should go! Your hats are some of the best I've ever seen and those humans would look awfully cute in pretty much any of them.$1#$b#If it helps, I'll go too!$1",
+    "event-1740404.18": "Okay, poke.$3#$b#Farmer make clothes too?",
+    "event-1740404.19": "Ah, so farmer help? Me help too, poke.[428]",
+    "event-1740404.20": "Please take these as well! [428]#$b#Thank you for being so kind to my big brother.[428]$h",
+    "event-1740404.21": "We will watch show. Hope it fun, poke.",
+
+    // FESTIVAL NAMES
+    //--------------
+
+    "Emily.Fashion.Show": "Ferngill Fashion Show",
+    "Fashion.Festival": "Fashion Festival",
+
+    // FESTIVAL DIALOGUE
+    //------------------
+
+    // Misc
+
+    "Festival.FashionShow.Event": "Should we start the fashion show? Emily is ready.",
+    "Festival.FashionShow.Yes": "Yes, let's start.",
+    "Festival.FashionShow.No": "Not yet.",
+
+    // Main Event (HALEY)
+    "Festival.FashionShow.01": "May I have your attention, please?#$b#We're ready to begin!$1",
+    "Festival.FashionShow.02": "Go Emily!",
+    "Festival.FashionShow.03": "Thank you all for coming out today. It really means a lot to have you all here.#$b#I'd like to present a few of my spotlight pieces for your viewing.#$b#I'd also like to thank Haley for agreeing to show my designs in motion to you all, and Shane for recording the event for me.#$b#Come on out, Haley!",
+    "Festival.FashionShow.04": "I call this collection the 'Verdant Dreamer'. It features warm tones and nature-inspired patterns.#$b#This first outfit is the 'Sunflower Vision'.",
+    "Festival.FashionShow.05": "This piece consists of a marble-dyed marigold robe made from silk, featuring bell sleeves, and an umber-colored strapless dress.",
+    "Festival.FashionShow.06": "Striking!",
+    "Festival.FashionShow.07": "It flows so nicely!",
+    "Festival.FashionShow.08": "How daring!",
+    "Festival.FashionShow.09": "Thank you, Haley! I'm taking orders for this piece right now.",
+    "Festival.FashionShow.10": "This second piece is called 'Meadow Reverie'. Please tell us about it, Haley!$1",
+    "Festival.FashionShow.11": "This peach-colored bolero jacket is actually made from mushroom leather. I didn't even know there was such a thing!$1#$b#And this empire waist gown is mint-colored with a floral pattern, made from chiffon.",
+    "Festival.FashionShow.12": "Amazing!",
+    "Festival.FashionShow.13": "Such a pattern!",
+    "Festival.FashionShow.14": "Love that color!",
+    "Festival.FashionShow.15": "All of these pieces can be custom-tailored to you. And now, the last one, my favorite... 'Plum Fantasy'!$1#$b#Haley, take it away!$1",
+    "Festival.FashionShow.16": "It's a violet peplum dress with a magenta paisley pattern, featuring a golden shoulder detailing based on a chrysanthemum!#$b#The collar is a half-float, and it feels SO nice to move around in.$1",
+    "Festival.FashionShow.17": "I want two!",
+    "Festival.FashionShow.18": "Fabulous!",
+    "Festival.FashionShow.19": "You look gorgeous in that!!",
+    "Festival.FashionShow.20": "Thank you all!#$b#These are all the pieces I have to show off for today. All of them can be custom-tailored to your fit, and I have many more for sale now!#$b#And if you're ever in need of a custom design, please feel free to come see me!",
+    "Festival.FashionShow.21": "What a fun and beautiful event!",
+    "Festival.FashionShow.22": "Emily has a bright fashion future ahead of her.",
+
+    // Main Event (ALEX)
+    "Festival.FashionShow.23": "I call this collection the 'Chromatic Measure'. This line is casual in fit but features striking high-contrast color pairings. This first outfit is the 'Contrast Parallel'.",
+    "Festival.FashionShow.24": "This is, uh...$7#$b#%Alex appears to be checking some notes on his hand.#$b#An indigo i-iridescent silk jersey with a pearl stripe and an offset zip collar. The pants are apricot-colored with fancy stitching on the hems.$9",
+    "Festival.FashionShow.25": "I love the lines!",
+    "Festival.FashionShow.26": "Sharp!",
+    "Festival.FashionShow.27": "So bold!",
+    "Festival.FashionShow.28": "Thank you, Alex! I'm taking orders for this piece right now.",
+    "Festival.FashionShow.29": "This second piece is called 'Median Tincture'. (Alex, you're doing great!)$1",
+    "Festival.FashionShow.30": "This one is natural-color wool, with a tangerine collar. The edges are beaded with malachite and sea-glass.$9#$b#Oh, the pants! They're, uh, made of satin!$7",
+    "Festival.FashionShow.31": "It looks cozy!",
+    "Festival.FashionShow.32": "Sign me up!",
+    "Festival.FashionShow.33": "Slick!",
+    "Festival.FashionShow.34": "All of these pieces can be custom-tailored to you. And now, the last one, my favorite... 'Saturated Ratio'!$1#$b#Alex, take it away!$1",
+    "Festival.FashionShow.35": "Right. The hoodie is made from recycled fleece and has rainbows on the sleeves. And the jeans are gray-blue.$9#$b#It's pretty comfy to move around in, actually.$1",
+    "Festival.FashionShow.36": "Work it, Alex!",
+    "Festival.FashionShow.37": "Sign me up!",
+    "Festival.FashionShow.38": "Great pattern!",
+    "Festival.FashionShow.39": "Thank you all!#$b#These are all the pieces I have to show off for today. All of them can be custom-tailored to your fit, and I have many more for sale now!#$b#And if you're ever in need of a custom design, please feel free to come see me!",
+    "Festival.FashionShow.40": "What a fun and beautiful event!",
+    "Festival.FashionShow.41": "Emily has a bright fashion future ahead of her.",
+    "Festival.FashionShow.42": "Thank you all for coming out today. It really means a lot to have you all here.#$b#I'd like to present a few of my spotlight pieces for your viewing.#$b#I'd also like to thank Alex for agreeing to show my designs in motion to you all, and Haley for recording the event for me.#$b#Come on out, Alex!",
+
+    // Main Event (JERIC)
+    "Festival.FashionShow.43": "Thank you all for coming out today. It really means a lot to have you all here.#$b#I'd like to present a few of my spotlight pieces for your viewing.#$b#I'd also like to thank Jeric for agreeing to show my designs in motion to you all, and Haley for recording the event for me.#$b#Come on out, Jeric!",
+    "Festival.FashionShow.44": "I call this collection the 'Urban Catwalk'. It's a semi-casual line inspired by the city of Zuzu. This first outfit is the 'Professional Byways'.",
+    "Festival.FashionShow.45": "This is a cotton-blend tan jacket and tank top undershirt, paired with high-waisted capris in a golden-brown color.#$b#Show 'em you mean business!$7",
+    "Festival.FashionShow.46": "What swag!",
+    "Festival.FashionShow.47": "Great flow!",
+    "Festival.FashionShow.48": "I love the lines!",
+    "Festival.FashionShow.49": "Thank you, Jeric! I'm taking orders for this piece right now.",
+    "Festival.FashionShow.50": "This second piece is called 'Natural Bustle'.#$b#Jeric, tell us about it!$1",
+    "Festival.FashionShow.51": "You got it, ma'am.$7#$b#The centerpiece for this outfit is this olive twill weave overcoat, striped with a high-contrast pattern hinting at the wildlife you might find in the city.#$b#It's paired with a charcoal denim shirt and loose cotton trousers.",
+    "Festival.FashionShow.52": "Looks comfortable!",
+    "Festival.FashionShow.53": "So dashing!",
+    "Festival.FashionShow.54": "Work it!",
+    "Festival.FashionShow.55": "All of these pieces can be custom-tailored to you. And now, the last one, my favorite... 'Capricious Skyline'!$1#$b#Jeric, take it away!$1",
+    "Festival.FashionShow.56": "This flocked wool jacket is emblazoned with a hand-embroidered fire-and-ice motif. It's matched with a turtleneck collar crop-top, and chambray jeans.#$b#You worked hard on those abs, so why not show them off, right?$7",
+    "Festival.FashionShow.57": "I'm in love!",
+    "Festival.FashionShow.58": "What amazing stitching!",
+    "Festival.FashionShow.59": "So powerful!",
+    "Festival.FashionShow.60": "Thank you all!#$b#These are all the pieces I have to show off for today. All of them can be custom-tailored to your fit, and I have many more for sale now!#$b#And if you're ever in need of a custom design, please feel free to come see me!",
+    "Festival.FashionShow.61": "What a fun and beautiful event!",
+    "Festival.FashionShow.62": "Emily has a bright fashion future ahead of her.",
+
+    // Main Event (YSABELLE)
+    "Festival.FashionShow.63": "Thank you all for coming out today. It really means a lot to have you all here.#$b#I'd like to present a few of my spotlight pieces for your viewing.#$b#I'd also like to thank Ysabelle for agreeing to show my designs in motion to you all, and Shane for recording the event for me.#$b#Come on out, Ysabelle!",
+    "Festival.FashionShow.64": "I call this collection the 'Elemental Danseuse'. They're formal wear inspired by the classical elements. This first outfit is the 'Lissome Blaze'.",
+    "Festival.FashionShow.65": "This vermillion plunge bodycon dress features gold lapels and hand-stitched gold starburst embroidery, paired with a tuscan yellow bandeau.$8",
+    "Festival.FashionShow.66": "Lovely!",
+    "Festival.FashionShow.67": "Amazing color!",
+    "Festival.FashionShow.68": "What detail!",
+    "Festival.FashionShow.69": "Thank you, Ysabelle! I'm taking orders for this piece right now.",
+    "Festival.FashionShow.70": "This second piece is called 'Graceful Zephyr'.#$b#Could you tell us about it, Ysabelle?$1",
+    "Festival.FashionShow.71": "Of course, Emily.$11#$b#Graceful Zephyr is a pearl chiffon jumpsuit, paired with an attached double scarf, topped with a lavender linen jacket with epaulets.$8",
+    "Festival.FashionShow.72": "Beautiful color pairing!",
+    "Festival.FashionShow.73": "So stunning!",
+    "Festival.FashionShow.74": "Elegant!",
+    "Festival.FashionShow.75": "All of these pieces can be custom-tailored to you. And now, the last one, my favorite... 'Aquatic Elegance'!$1#$b#Ysabelle, take it away!$1",
+    "Festival.FashionShow.76": "This is an off-the-shoulder turquoise satin mermaid dress, with azure sequin detailing on the bodice.$8#$b#It comes with an attached floor-length cape patterned with silver foam embroidery and seed pearls.$8#$b#The perfect piece for when you want to look beautiful but also want to set boundaries.",
+    "Festival.FashionShow.77": "What a knockout!",
+    "Festival.FashionShow.78": "Commanding!",
+    "Festival.FashionShow.79": "Like a queen!",
+    "Festival.FashionShow.80": "Thank you all!#$b#These are all the pieces I have to show off for today. All of them can be custom-tailored to your fit, and I have many more for sale now!#$b#And if you're ever in need of a custom design, please feel free to come see me!",
+    "Festival.FashionShow.81": "What a fun and beautiful event!",
+    "Festival.FashionShow.82": "Emily has a bright fashion future ahead of her.",
+
+    // Year 2+ Variant Intro/Outro
+    
+    "Festival.FashionShow.03.Y2": "Thank you all for coming out today. It really means a lot to have you all here.#$b#I'd like to start off today's event by presenting a few of my spotlight pieces, and I'll be followed by a number of talented designers who have joined us today.#$b#I'd also like to thank Haley for agreeing to show my designs in motion to you all, and Shane for recording the event for me.#$b#Come on out, Haley!",
+
+    "Festival.FashionShow.20.Y2": "Thank you all!#$b#These are all the pieces I have to show off for today. All of them can be custom-tailored to your fit, and I have many more for sale now!#$b#And if you're ever in need of a custom design, please feel free to come see me!#$b#Next up is with their showcase pieces is...",
+
+    "Festival.FashionShow.42.Y2": "Thank you all for coming out today. It really means a lot to have you all here.#$b#I'd like to start off today's event by presenting a few of my spotlight pieces, and I'll be followed by a number of talented designers who have joined us today.#$b#I'd also like to thank Alex for agreeing to show my designs in motion to you all, and Haley for recording the event for me.#$b#Come on out, Alex!",
+
+    "Festival.FashionShow.39.Y2": "Thank you all!#$b#These are all the pieces I have to show off for today. All of them can be custom-tailored to your fit, and I have many more for sale now!#$b#And if you're ever in need of a custom design, please feel free to come see me!#$b#Next up is with their showcase pieces is...",
+
+    "Festival.FashionShow.43.Y2": "Thank you all for coming out today. It really means a lot to have you all here.#$b#I'd like to start off today's event by presenting a few of my spotlight pieces, and I'll be followed by a number of talented designers who have joined us today.#$b#I'd also like to thank Jeric for agreeing to show my designs in motion to you all, and Haley for recording the event for me.#$b#Come on out, Jeric!",
+
+    "Festival.FashionShow.60.Y2": "Thank you all!#$b#These are all the pieces I have to show off for today. All of them can be custom-tailored to your fit, and I have many more for sale now!#$b#And if you're ever in need of a custom design, please feel free to come see me!#$b#Next up is with their showcase pieces is...",
+
+    "Festival.FashionShow.63.Y2": "Thank you all for coming out today. It really means a lot to have you all here.#$b#I'd like to start off today's event by presenting a few of my spotlight pieces, and I'll be followed by a number of talented designers who have joined us today.#$b#I'd also like to thank Ysabelle for agreeing to show my designs in motion to you all, and Shane for recording the event for me.#$b#Come on out, Ysabelle!",
+
+    "Festival.FashionShow.80.Y2": "Thank you all!#$b#These are all the pieces I have to show off for today. All of them can be custom-tailored to your fit, and I have many more for sale now!#$b#And if you're ever in need of a custom design, please feel free to come see me!#$b#Next up is with their showcase pieces is...",
+
+    // Vanilla
+
+    "Festival.FashionShow.Emily": "Hi, @! Whew, things are so busy, but it's lots of fun!$1#$b#Do you think everyone is ready to start?",
+    "Festival.FashionShow.Lewis": "I'm always happy to have another big show in Pelican Town. It's good for local morale.$1",
+    "Festival.FashionShow.Marnie": "%Marnie is looking wistfully at the larger dresses.#$b#Maybe I'll just get Jas something cute.$2",
+    "Festival.FashionShow.Jodi": "I had no idea Emily had such talent.#$b#Maybe I'll consider getting myself something as a treat.$1",
+    "Festival.FashionShow.Caroline": "Emily picks such soothing colors. It's very relaxing to just look at her clothes.$1",
+    "Festival.FashionShow.Sam": "Emily's designs are pretty cool.#$b#Think she'd make us some band uniforms?$10",
+    "Festival.FashionShow.Abigail": "Think Emily would design some adventuring gear for me?#$b#I'd commission her, of course! I've commissioned a few art pieces before and it's always great working together with the artist.$h",
+    "Festival.FashionShow.Vincent": "If it's a party, where's the games?$3",
+    "Festival.FashionShow.Kent": "The family really seems to be having fun.$1#$b#Do you... think Jodi might like one of those dresses?",
+    "Festival.FashionShow.Haley": "Not now, @. I'm trying to figure out how to approach the lighting for this shot.",
+    "Festival.FashionShow.Gus": "After this is over, I'm serving Emily a big meal. She's worked really hard!$1",
+    "Festival.FashionShow.Harvey": "I'm not really a judge of fashion... Do you think one of these would look good on me, @?",
+    "Festival.FashionShow.Maru": "You know, fashion has its own science and math to it.$3#$b#The way clothes fold and move is all about the angles and shapes of the cloth.",
+    "Festival.FashionShow.Pierre": "I thought about putting up a concession stand, but....$2#$b#This is Emily's big day, I don't want to take away from it.",
+    "Festival.FashionShow.Pam": "I don't know nothin' about fashion, but Emily's a good kid. I gotta at least show up, right?$1#$b#Think Penny might like one of those little bangles?",
+    "Festival.FashionShow.Penny": "Emily's clothes are so cute!$1#$b#We can't really afford any luxury, though....$2",
+    "Festival.FashionShow.Elliott": "It's heartening to see Emily get to express herself as an artist to everyone like this.$1",
+    "Festival.FashionShow.Willy": "Think she might have something that holds up to salt water?$1",
+    "Festival.FashionShow.Gunther": "I thought I'd do a little documentation of the festival for the town records.#$b#History isn't only things in the distant past, after all.",
+    "Festival.FashionShow.Marlon": "I always make sure I make it to all the town festivals. Even if they're new.",
+    "Festival.FashionShow.Demetrius": "Take your time, dear. If you see something you like, we'll get it.$1",
+    "Festival.FashionShow.Robin": "I'm a little too old to be wearing so much pizzazz.$4#$b#It looks like some of these are made of sturdier stuff, though, so maybe....",
+    "Festival.FashionShow.Sebastian": "I hope Mom finds something she likes.$1#$b#Me? Nah. Emily's colors are too bright for me.",
+    "Festival.FashionShow.Clint": "D-does this look okay, @? It doesn't look weird, right?$4",
+    "Festival.FashionShow.Evelyn": "It's so lovely seeing everyone in town gathered for Emily's sake.$1",
+    "Festival.FashionShow.George": "Hmph. People parading around like roosters, I got no interest in it.#$b#At least the weather's nice.",
+    "Festival.FashionShow.Alex": "Something that shows off my arms would be nice.#$b#You should get something that shows off your best features too, @.",
+    "Festival.FashionShow.Jas": "Everything is so pretty! It's like a field of flowers!$1",
+    "Festival.FashionShow.Leah": "Seeing the work of another artist like Emily is so inspiring.#$b#I'm going to be creating for days!$1",
+    "Festival.FashionShow.Linus": "There's a lot of people here...$2#$b#But Emily is so kind to me, I want to support her as well.$1",
+    "Festival.FashionShow.Sandy": "I came all the way from the desert for this! Ooh, I'm super excited!$1",
+    "Festival.FashionShow.Wizard": "The everyday affairs of the townspeople are of no interest to me.#$b#But someone needs to make sure the weather is clear.",
+    "Festival.FashionShow.Shane": "Emily's amazing, huh? She worked hard, I'm glad for her.",
+
+    /* Year 2+    
+    "Festival.FashionShow.Jodi.Y2": "Now that I think about it, Emily always was creative as a child.#$b#I wonder if her parents know how talented she is? They must be proud.$1",*/
+
+
+    // Participants
+    "Festival.FashionShow.Jeric.inshow": "Hey, @! I hope you're ready to watch the best model ever strut his stuff in a bit!$7",
+    "Festival.FashionShow.Haley.inshow": "I'd better see you front and center when I get up on stage, @.#$b#You're going to be awed!$1",
+    "Festival.FashionShow.Alex.inshow": "I'm a little nervous about showing off clothing in front of everyone....$2#$b#Just gotta pretend they're all in their underwear, right?",
+    "Festival.FashionShow.Ysabelle.inshow": "I'm happy to help out with modeling. I have plenty of experience in front of crowds, this will go off without a hitch.$1",
+    "Festival.FashionShow.Shane.inshow": "I can't believe Emily asked me to record her show...#$b#Okay, Shane, don't mess this up.$2",
+
+    // Ridgeside
+
+    "Festival.FashionShow.Jeric": "Just browsing, @? I think some of these would look great on you.$1",
+    "Festival.FashionShow.Faye": "I'm so excited to see Emily's show!$1#$b#I'm taking lots of notes for future ideas.",
+    "Festival.FashionShow.Corine": "I don't really know much about fashion, but they're pretty to look at, right?$1",
+    "Festival.FashionShow.Ian": "Sean and I helped set up the stage.#$b#For being kinda short notice, it went really fast!$1",
+    "Festival.FashionShow.Sean": "Hey @, which color do you think looks better on me, red or blue?$1",
+    "Festival.FashionShow.Blair": "These outfits are so pretty... I'd love to go dancing in one for the Flower Dance!",
+    "Festival.FashionShow.Irene": "I got all the cooking prep done early so I could sneak down here for a bit.#$b#What a feast for the eyes!$1",
+    "Festival.FashionShow.Maddie": "Oh, these hair clips are so cute!$1#$b#@! How long have you been there?$3",
+    "Festival.FashionShow.Daia": "Be honest, @.#$b#Which one of these would you prefer me seduce you in?$1",
+    "Festival.FashionShow.Kiarra": "Hey, cousin! See anything that matches your personal style?#$b#I'm more a fan of the butch aesthetic, myself.$1",
+    "Festival.FashionShow.Ysabelle": "Have you seen these dresses? They're so pretty! I'm definitely going home with one.$h",
+
+    // Always Raining in the Valley
+
+    "Festival.FashionShow.Sterling": "Back in my day, no one was getting together to organize this kind of event for the community.#$b#I find it incredible how much people have come together in the past few years.$1#$b#You're largely to thank for that, hotstuff.#$e#Besides, the free food is absolutely bomb.$10",
+    "Festival.FashionShow.Sterling_y2": "Believe it or not, I can enjoy the artistry in clothes.$10#$b#I think Emily does a wonderful job with the fashion show year after year.#$e#What? You think my dressing straight out of a bad boy romance is somehow an accidental choice?$10#$e#I used to be a lot more overt about it when I was younger, you can ask Pierre.#$b#%Pierre mumbles something incoherently beside Sterling.",
+    "Festival.FashionShow.Mia": "Every time I think I somehow gave up something by coming out to live in the countryside, I am proven exceptionally wrong.$1#$b#This isn't just good. This is excellent- It's even better than excellent!#$e#My friends back in the city could absolutely never.$5#$b#Who in the world needs stuffy runways, anyway?$10#$e#%Mia sighs dreamily.#$b#Man, I love pretty fashion...$6#$e#Quick! Henry! Let's go look at the clothes up close.",
+    "Festival.FashionShow.Henry.R1": "I'm not sure I've ever felt THIS out of place before.$3#$b#I don't know if you've noticed, but fashion...It's never really been my thing. So all of this stuff is a little daunting.$3#$b#But at least Mia seems to be having a blast. It may not be for me, but I guess it's kind of fun watching her run around like a kid in a candy store.$6#$e#",
+    "Festival.FashionShow.Henry.R2": "It's really amazing seeing how creative people can get with something I've never really given much thought to.$0#$b#Clothes have always just been such a practical thing for me. I've never really gone for anything too fancy or showy unless it's for some kind of special event. Despite Mia's best efforts, it just doesn't excite me.$3#$b#...Hang on, are they selling denim cowboy hats over there?!",
+
+    "Festival.FashionShow.Sterling.SterlingMarried": "Well, well, if it isn't the most beautiful shining star in all of the night.$10#$b#Why don't you take a seat, love? I'll go grab a bite from the grill.$0#$e#I'll be right back, in the meantime, why don't you finish the story I was just telling Pierre? About what happened last time we went out riding.$12",
+    "Festival.FashionShow.Henry.SterlingMarried": "Hey cousin, can you keep a secret for me?$0#$b#So I was following Mia around while she was shopping, and I spotted something that I thought Sterling might like.$1#$b#He's been helping you out on the farm and stuff, right? So when I saw this sunhat that was colored like a sunflower, I just had to get it for him.$10#$b#I've never been too good at gift giving, but... I hope he likes it.$1",
+
+    "Festival.FashionShow.Mia.FashionShowComplete": "@! @! Did you hear?!$1#$b#Wait for it. Are you ready?$1#$b#%Mia takes a REALLY deep breath.#$b#I get to MODEL this year!$3#$b#I am literally so excited. I just want to dance around in anticipation.$1#$e#Take THAT, Stacy, saying I looked like an ugly boy during the ninth grade.$7#$e#Henry! Help me take a good picture please, we're sending it as this years Spirit's Eve postcard to Stacy and the rest of them.$10",
+
+    "Festival.FashionShow.Sterling.FashionShowComplete.SterlingMarried": "Hey, sugar snap pea. Enjoying the festival?#$b#Mia is modelling this year if you haven't heard her squeals of happiness yet.$10#$b#We're chipping in to buy her some flowers after the fact to support her.#$e#%Sterling pulls you into a brief kiss.#$b#If you were to ask me, they should be begging you to model as well.$10$#b#But they probably don't want the rest of the models backing out from intimidation.$0",
+    "Festival.FashionShow.Henry.R1.FashionShowComplete": "I don't know if I've ever seen Mia THIS excited over something. You can really see how much this event means to her.$1#$b#Even I'm starting to get all jazzed up for the show! And I don't even understand what's going on at these things most of the time. Her energy is so infectious it almost makes me want to get on stage myself!$10#$b#...Not that I ever would. In fact, forget I said anything. This conversation never happened. Just go be excited for Mia.$4",
+    "Festival.FashionShow.Henry.R2.FashionShowComplete": "Hey cousin... think I could borrow Sterling for a bit?$#$b#It's nothing serious, it's just... I'm having a hard time keeping up with Mia on my own. Between all of the browsing, shopping, and getting ready for her time on stage... I'm kinda wiped out.$6#$b#Oh! But don't get me wrong!$11#$b#It's all been a blast. And seeing Mia up on stage was... really special. I'm glad everyone got to see what a star she is first hand.$10#$b... But I could also really use a nap right about now.$6",
+
+    // Jorts and Jean
+
+    "Festival.FashionShow.JortsCat": "Emily looks so happy! I'm glad everyone showed up for her!$1",
+    "Festival.FashionShow.JeanCat": "Always shop local, if you can, @. As you can see, it really makes a difference in the lives of people you know.$1",
+
+    // Marigold
+
+    "Festival.FashionShow.Marigold": "%Marigold is attentive, but seems to be enjoying the activity.",
+    "Festival.FashionShow.Marigold.Talk": "There are so many happy smells in town today! But I am working hard.",
+
+    // Yri and Charles
+    "Festival.FashionShow.Yri": "Those dresses are beautiful. I hope I can buy them after the show.$1",
+    "Festival.FashionShow.Charles": "I don't know anything about fashion, but I can say the models are a great choice. They look stunning.",
+
+    "Yri.spring.01": "I love this dress. Sometimes I put it on just to twirl around in it because it's just so light and flowy.$h#$e#I hope Charles doesn't think I'm weird.$3",
+    "Yri.spring.02": "When I saw this dress at the show, I knew I needed it. Just look at this pattern and color! It makes me happy just looking at it.$h",
+  
+    "Yri.summer.01": "Hey @, I don't think I ever asked, but did you buy something from the fashion show stands in spring?#$b#I bought this dress back then, it's called Plum Fantasy.$h",
+    "Yri.summer.02": "Emily is such a kind person, she was really generous and adjusted the dress for me free of charge.$h#$e#If she ever needs help around the house, I will volunteer Charles for it.#$b#Just kidding, I would never do that to him.$h",
+  
+    "Yri.fall.01": "Hmm...#$b#You know what I just noticed?! I can actually say that I wear designer clothes.$h#$e#I need to tell Charles.$h",
+    "Yri.fall.02": "It's actually so sad that I couldn't convince Charles to buy some of the outfits, he would look so dashing in them.$s#$e#He doesn't really care about fashion, so he will only buy new clothes when the old ones fall apart.$s",
+
+
+    "Charles.spring.01": "Yri bought a couple of dresses from Emily. At first I was worried because, you know... designer clothes sound expensive.#$b#But it was actually really affordable and it made Yri happy, too, so it's a win-win.$h",
+    "Charles.spring.02": "Have you seen the dress Yri is wearing today? She looked so cute earlier when she put it on and did a little happy dance in it.$4",
+  
+    "Charles.summer.01": "I don't know anything about fashion but I do know Yri looks cute in everything and that's all I need to know.$h",
+    "Charles.summer.02": "Yri put on a dress she bought during the fashion show. She was really excited and is already talking about the next one.$h#$b#I better start saving.$h",
+  
+    "Charles.fall.01": "Yri told me that Emily is already preparing for next year's fashion show.#$b#She's really dedicated and I'm glad her business is slowly taking off.$h",
+    "Charles.fall.02": "Hello @, can you make sure Yri is keeping warm?#$b#It's getting colder but she ignores me and insists that Emily's clothes are very well-insulated.$3",
+
+    // Special Orders
+
+    "SpecialOrder.Emily_FashionShow_Name": "Fashion Facilitation",
+    "SpecialOrder.Emily_FashionShow_Body": "I've got some amazing new designs in mind for my fashion show, but I'll need a LOT of materials in order to make enough to sell. Can you bring me cloth and natural dye ingredients?",
+    "SpecialOrder.Emily_FashionShow_Objective0": "Deliver 10 cloth to Emily's sewing table.",
+    "SpecialOrder.Emily_FashionShow_Objective1": "Deliver 3 red dye ingredients to Emily's sewing table.",
+    "SpecialOrder.Emily_FashionShow_Objective2": "Deliver 3 orange dye ingredients to Emily's sewing table.",
+    "SpecialOrder.Emily_FashionShow_Objective3": "Deliver 3 yellow dye ingredients to Emily's sewing table.",
+    "SpecialOrder.Emily_FashionShow_Objective4": "Deliver 3 green dye ingredients to Emily's sewing table.",
+    "SpecialOrder.Emily_FashionShow_Objective5": "Deliver 3 blue dye ingredients to Emily's sewing table.",
+    "SpecialOrder.Emily_FashionShow_Objective6": "Deliver 3 purple dye ingredients to Emily's sewing table.",
+    
+    "SpecialOrder.Emily_SpringFashion_Name": "New Spring Fashions",
+    "SpecialOrder.Emily_SpringFashion_Body": "The fresh spring blossoms are inspiring me to create new designs! Can you bring me dye materials and 5 different old shirts to repurpose? Only non-generic shirts in pink and green, please!",
+    "SpecialOrder.Emily_SpringFashion_Objective0": "Deliver 5 pink or green shirts to Emily's sewing table.",
+    "SpecialOrder.Emily_SpringFashion_Objective1": "Deliver 10 pink dye ingredients to Emily's sewing table.",
+    "SpecialOrder.Emily_SpringFashion_Objective2": "Deliver 10 green dye ingredients to Emily's sewing table.",
+    
+    "SpecialOrder.Emily_SummerFashion_Name": "New Summer Fashions",
+    "SpecialOrder.Emily_SummerFashion_Body": "The warm sea breeze is inspiring me to create new designs! Can you bring me dye materials and 5 different old shirts to repurpose? Only non-generic shirts in light blue and yellow, please!",
+    "SpecialOrder.Emily_SummerFashion_Objective0": "Deliver 5 light blue or yellow shirts to Emily's sewing table.",
+    "SpecialOrder.Emily_SummerFashion_Objective1": "Deliver 10 light blue dye ingredients to Emily's sewing table.",
+    "SpecialOrder.Emily_SummerFashion_Objective2": "Deliver 10 yellow dye ingredients to Emily's sewing table.",
+    
+    "SpecialOrder.Emily_FallFashion_Name": "New Fall Fashions",
+    "SpecialOrder.Emily_FallFashion_Body": "The crisp falling leaves are inspiring me to create new designs! Can you bring me dye materials and 5 different old shirts to repurpose? Only non-generic shirts in orange and red, please!",
+    "SpecialOrder.Emily_FallFashion_Objective0": "Deliver 5 orange or red shirts to Emily's sewing table.",
+    "SpecialOrder.Emily_FallFashion_Objective1": "Deliver 10 orange dye ingredients to Emily's sewing table.",
+    "SpecialOrder.Emily_FallFashion_Objective2": "Deliver 10 red dye ingredients to Emily's sewing table.",
+    
+    "SpecialOrder.Emily_WinterFashion_Name": "New Winter Fashions",
+    "SpecialOrder.Emily_WinterFashion_Body": "The sparkling new snowfall is inspiring me to create new designs! Can you bring me dye materials and 5 different old shirts to repurpose? Only non-generic shirts in dark blue and white, please!",
+    "SpecialOrder.Emily_WinterFashion_Objective0": "Deliver 5 dark blue or white shirts to Emily's sewing table.",
+    "SpecialOrder.Emily_WinterFashion_Objective1": "Deliver 10 dark blue dye ingredients to Emily's sewing table.",
+    "SpecialOrder.Emily_WinterFashion_Objective2": "Deliver 10 white dye ingredients to Emily's sewing table.",
+
+    // Mail
+    
+    "SpecialOrder.FashionShowLetter.Title": "Fashion Flourish",
+    "SpecialOrder.FashionShowLetter.Body": "Dear @,^^Thanks for your help! The cloth and dyes you delivered will be perfect.^^I hope you're looking forward to the fashion show - I've decided to hold it before the Flower Dance on Spring 19, when the weather's nice and warm. It'll be a lot of work, but I think it will be fun!^^   - Emily",
+    
+    "SpecialOrder.FashionShowComplete.Title": "Fashion Show Success",
+    "SpecialOrder.FashionShowComplete.Body": "Dear @,^^I'm so glad the fashion show was a success! I wouldn't have been able to do it without your help, so thank you again!^^Hopefully we should be able to hold it at the same time next year, too!^^   - Emily",
+
+    // NEW FOR 1.6 (SHOP DIALOGUE)
+
+    "ShopDialogue.EmilyShop": "Let me know if you want to try something on.",
+    "ShopDialogue.WisteriaShop": "You look like you have good taste, nyes?",
+    "ShopDialogue.HatmouseShop": "Buy hats, poke?",
+    "ShopDialogue.RoseShop": "Freshly baked this morning!",
+    "ShopDialogue.MoiraShop": "My main shop is in Mount Vapius. What designs are you looking for?",
+
+    // NEW FOR 1.6 (FURNITURE)
+
+    "WD.BoutiqueSewingTable": "Boutique Sewing Table",
+    "WD.BoutiqueUmbrellaHolder": "Boutique Umbrella Holders",
+    "WD.DecoHatBoxes": "Deco Hat Boxes",
+    "WD.DecoMannequin": "Deco Mannequin",
+    "WD.DecoParasol1": "Deco Parasol 1",
+    "WD.DecoParasol2": "Deco Parasol 2",
+    "WD.DecoParasol3": "Deco Parasol 3",
+    "WD.DecoParasol4": "Deco Parasol 4",
+    "WD.DecoParasol5": "Deco Parasol 5",
+    "WD.DecoWisteria": "Deco Wisteria",
+    "WD.BoutiqueSimpleMirror": "Boutique Simple Mirror",
+    "WD.Mannequin": "Boutique Mannequin",
+    "WD.AquaticEleganceMannequin": "Aquatic Elegance Mannequin",
+    "WD.CapriciousSkylinesMannequin": "Capricious Skylines Mannequin",
+    "WD.ContrastParallelMannequin": "Contrast Parallel Mannequin",
+    "WD.GracefulZephyrMannequin": "Graceful Zephyr Mannequin",
+    "WD.LissomeBlazeMannequin": "Lissome Blaze Mannequin",
+    "WD.MeadowReverieMannequin": "Meadow Reverie Mannequin",
+    "WD.MedianTinctureMannequin": "Median Tincture Mannequin",
+    "WD.NaturalBustleMannequin": "Natural Bustle Mannequin",
+    "WD.PlumFantasyMannequin": "Plum Fantasy Mannequin",
+    "WD.ProfessionalBywaysMannequin": "Professional Byways Mannequin",
+    "WD.SaturatedRatioMannequin": "Saturated Ratio Mannequin",
+    "WD.SunflowerVisionMannequin": "Sunflower Vision Mannequin",
+    "WD.BoutiqueFlowerpot": "Boutique Flower Pot",
+    "WD.BoutiqueVase": "Boutique Vase",
+    "WD.NecklaceDisplay1": "Neck Display 1",
+    "WD.NecklaceDisplay2": "Neck Display 2",
+    "WD.NecklaceDisplay3": "Neck Display 3",
+    "WD.NecklaceDisplay4": "Neck Display 4",
+    "WD.NecklaceDisplay5": "Neck Display 5",
+    "WD.PedestalCourtains": "Pedestal Courtains",
+    "WD.PedestalPedestal": "Pedestal Pedestal",
+    "WD.SewingTable": "Sewing Table",
+    "WD.LargeHatBox": "Large Hat Box",
+    "WD.DecoHat1": "Deco Hat 1",
+    "WD.DecoHat2": "Deco Hat 2",
+    "WD.DecoHat3": "Deco Hat 3",
+    "WD.DecoHat4": "Deco Hat 4",
+    "WD.DecoHat5": "Deco Hat 5",
+    "WD.DecoHat6": "Deco Hat 6",
+    "WD.DecoHat7": "Deco Hat 7",
+    "WD.DecoHat8": "Deco Hat 8",
+    "WD.LargeDisplayTable": "Large Display Table",
+    "WD.MediumDisplayTable": "Medium Display Table",
+    "WD.SmallDisplayTable": "Small Display Table",
+    "WD.OrnateDisplayTable": "Ornate Display Table",
+    "WD.ShoeDisplay": "Shoe Display",
+    "WD.HatDisplay": "Hat Display",
+    "WD.NecklaceDisplay": "Necklace Display",
+    "WD.MannequinDisplayCase": "Mannequin Display Case",
+    "WD.HatDisplayCase": "Hat Display Case",
+    "WD.CenterDisplayCase": "Center Display Case",
+}

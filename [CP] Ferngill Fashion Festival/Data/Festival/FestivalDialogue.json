@@ -1,0 +1,212 @@
+{
+    "Changes": [
+        {
+            "LogName": "Fashion Show Dialogue",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring19",
+            "Entries": {
+                //Vanilla
+                "Emily": "{{i18n:Festival.FashionShow.Emily}}",
+                "Lewis": "{{i18n:Festival.FashionShow.Lewis}}",
+                "Marnie": "{{i18n:Festival.FashionShow.Marnie}}",
+                "Jodi": "{{i18n:Festival.FashionShow.Jodi}}",
+                "Caroline": "{{i18n:Festival.FashionShow.Caroline}}",
+                "Sam": "{{i18n:Festival.FashionShow.Sam}}",
+                "Abigail": "{{i18n:Festival.FashionShow.Abigail}}",
+                "Vincent": "{{i18n:Festival.FashionShow.Vincent}}",
+                "Kent": "{{i18n:Festival.FashionShow.Kent}}",
+                "Haley": "{{i18n:Festival.FashionShow.Haley}}",
+                "Gus": "{{i18n:Festival.FashionShow.Gus}}",
+                "Harvey": "{{i18n:Festival.FashionShow.Harvey}}",
+                "Maru": "{{i18n:Festival.FashionShow.Maru}}",
+                "Pierre": "{{i18n:Festival.FashionShow.Pierre}}",
+                "Pam": "{{i18n:Festival.FashionShow.Pam}}",
+                "Penny": "{{i18n:Festival.FashionShow.Penny}}",
+                "Elliott": "{{i18n:Festival.FashionShow.Elliott}}",
+                "Willy": "{{i18n:Festival.FashionShow.Willy}}",
+                "Gunther": "{{i18n:Festival.FashionShow.Gunther}}",
+                "Marlon": "{{i18n:Festival.FashionShow.Marlon}}",
+                "Demetrius": "{{i18n:Festival.FashionShow.Demetrius}}",
+                "Robin": "{{i18n:Festival.FashionShow.Robin}}",
+                "Sebastian": "{{i18n:Festival.FashionShow.Sebastian}}",
+                "Clint": "{{i18n:Festival.FashionShow.Clint}}",
+                "Evelyn": "{{i18n:Festival.FashionShow.Evelyn}}",
+                "George": "{{i18n:Festival.FashionShow.George}}",
+                "Alex": "{{i18n:Festival.FashionShow.Alex}}",
+                "Jas": "{{i18n:Festival.FashionShow.Jas}}",
+                "Leah": "{{i18n:Festival.FashionShow.Leah}}",
+                "Linus": "{{i18n:Festival.FashionShow.Linus}}",
+                "Sandy": "{{i18n:Festival.FashionShow.Sandy}}",
+                "Wizard": "{{i18n:Festival.FashionShow.Wizard}}",
+                "Shane": "{{i18n:Festival.FashionShow.Shane}}"
+            }
+        },
+        {
+            "LogName": "Fashion Show Dialogue - Haley Model",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring19",
+            "Entries": {
+                "Haley": "{{i18n:Festival.FashionShow.Haley.inshow}}",
+            },
+            "When": {
+                "FashionModel |contains= Haley": true
+            }
+        },
+        {
+            "LogName": "Fashion Show Dialogue - Alex Model",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring19",
+            "Entries": {
+                "Alex": "{{i18n:Festival.FashionShow.Alex.inshow}}",
+            },
+            "When": {
+                "FashionModel |contains= Alex": true
+            }
+        },
+        {
+            "LogName": "Fashion Show Dialogue - Jeric Model",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring19",
+            "Entries": {
+                "Jeric": "{{i18n:Festival.FashionShow.Jeric.inshow}}",
+            },
+            "When": {
+                "FashionModel |contains= Jeric": true
+            }
+        },
+        {
+            "LogName": "Fashion Show Dialogue - Ysabelle Model",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring19",
+            "Entries": {
+                "Ysabelle": "{{i18n:Festival.FashionShow.Ysabelle.inshow}}",
+            },
+            "When": {
+                "FashionModel |contains= Ysabelle": true
+            }
+        },
+        {
+            "LogName": "Fashion Show Dialogue - Shane Record",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring19",
+            "Entries": {
+                "Shane": "{{i18n:Festival.FashionShow.Shane.inshow}}",
+            },
+            "When": {
+                "FashionModel |contains= Haley, Ysabelle": true
+            }
+        },
+        {
+            "LogName": "Fashion Show Dialogue - Ridgeside",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring19",
+            "Entries": {
+                "Jeric": "{{i18n:Festival.FashionShow.Jeric}}",
+                "Faye": "{{i18n:Festival.FashionShow.Faye}}",
+                "Corine": "{{i18n:Festival.FashionShow.Corine}}",
+                "Ian": "{{i18n:Festival.FashionShow.Ian}}",
+                "Sean": "{{i18n:Festival.FashionShow.Sean}}",
+                "Blair": "{{i18n:Festival.FashionShow.Blair}}",
+                "Irene": "{{i18n:Festival.FashionShow.Irene}}",
+                "Maddie": "{{i18n:Festival.FashionShow.Maddie}}",
+                "Daia": "{{i18n:Festival.FashionShow.Daia}}",
+                "Kiarra": "{{i18n:Festival.FashionShow.Kiarra}}",
+                "Ysabelle": "{{i18n:Festival.FashionShow.Ysabelle}}"
+            },
+            "When": { 
+                "HasMod: |contains=Rafseazz.RSVCP": true
+            }
+        },
+        {
+            "LogName": "Fashion Show Dialogue - J&J",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring19",
+            "Entries": {
+                "JortsCat": "{{i18n:Festival.FashionShow.JortsCat}}",
+                "JeanCat": "{{i18n:Festival.FashionShow.JeanCat}}"
+            },
+            "When": { 
+                "HasMod: |contains=tiakall.jortsandjean": true
+            }
+        },
+        {
+            "LogName": "Fashion Show Dialogue - Marigold",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring19",
+            "Entries": {
+                "DSVMarigold": "{{i18n:Festival.FashionShow.Marigold{{MarigoldTalk}}}}"
+            },
+            "When": {
+                "HasMod: |contains=DSVTeam.DiverseStardewValley": true
+            }
+        },
+        {
+            "LogName": "Fashion Show Dialogue - Yri & Charles",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring19",
+            "Entries": {
+                "Yri": "{{i18n:Festival.FashionShow.Yri}}",
+                "Charles": "{{i18n:Festival.FashionShow.Charles}}",
+            },
+            "When": {
+                "HasMod: |contains=yri.yri": true,
+            }
+        },
+        {
+            "LogName": "Fashion Show Dialogue - ARV",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring19",
+            "Entries": {            
+              "Sterling": "{{i18n:Festival.FashionShow.Sterling}}",
+              "Sterling_y2": "{{i18n:Festival.FashionShow.Sterling_y2}}",
+              "Mia": "{{i18n:Festival.FashionShow.Mia}}",
+              "Henry": "{{Random: {{i18n:Festival.FashionShow.Henry.R1}}++{{i18n:Festival.FashionShow.Henry.R2}}$11|inputSeparator=++}}",
+              "Henry_y2": ""
+            },
+            "When": {
+                "HasMod: |contains=HimeTarts.ARV.CP": true
+            }
+        },
+        {
+            "LogName": "Fashion Show Dialogue - ARV Married" ,
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring19",
+            "Entries": {            
+                "Sterling": "{{i18n:Festival.FashionShow.Sterling.SterlingMarried}}",
+                "Henry": "{{i18n:Festival.FashionShow.Henry.SterlingMarried}}",    
+            },
+            "When": { 
+                "Relationship:Sterling": "Married",
+                "HasMod: |contains=HimeTarts.ARV.CP": true
+            }
+        },
+        {
+            "LogName": "Fashion Show Dialogue - ARV Married" ,
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring19",
+            "Entries": {
+                "Mia": "{{i18n:Festival.FashionShow.Mia.FashionShowComplete}}",    
+            },
+            "When": { 
+                "HasFlag |contains= FashionShowComplete": true,
+                "HasMod: |contains=HimeTarts.ARV.CP": true
+            }
+        },
+        {
+            "LogName": "Fashion Show Dialogue - ARV Married" ,
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring19",
+            "Entries": {
+            
+                "Sterling": "{{i18n:Festival.FashionShow.Sterling.FashionShowComplete.SterlingMarried}}",
+                "Henry":"{{Random: {{i18n:Festival.Henry.R1.FashionShowComplete}}++{{i18n:Festival.Henry.R2.FashionShowComplete}}|InputSeparator=++}}",
+    
+            },
+            "When": { 
+                "HasFlag |contains= FashionShowComplete": true,
+                "Relationship:Sterling": "Married",
+                "HasMod: |contains=HimeTarts.ARV.CP": true
+            }
+        }
+    ]
+}

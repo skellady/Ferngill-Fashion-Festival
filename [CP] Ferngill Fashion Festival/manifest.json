@@ -1,0 +1,42 @@
+{
+  "Name": "Ferngill Fashion Festival - CP",
+  "Author": "UNA",
+  "Version": "2.0.0",
+  "Description": "Adds a new festival.",
+  "UniqueID": "UNA.FF.CP",
+  "MinimumApiVersion": "1.0.0",
+  "UpdateKeys": [
+    "Nexus:17404"
+  ],
+  "Dependencies": [
+    // required mods
+	{
+		"UniqueID": "UNA.FashionFestivalSMAPI",
+		"IsRequired": true,
+	},
+		// Compatibility
+		{
+			"UniqueID": "Rafseazz.RSVCP",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "skellady.SBVCP",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "tiakall.jortsandjean",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "yri.yri",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "DSVTeam.DiverseStardewValley",
+			"IsRequired": false,
+		}
+  ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  }
+}

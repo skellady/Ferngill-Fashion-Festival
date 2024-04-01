@@ -1,0 +1,27 @@
+{
+    "Changes": 
+	[ 
+		{
+			"LogName": "DSV Compat - Alex",
+			"Action": "EditImage",
+			"Target": "Characters/AlexOutfit1, Portraits/AlexOutfit1, Characters/AlexOutfit2, Portraits/AlexOutfit2, Characters/AlexOutfit3, Portraits/AlexOutfit3",
+			"FromFile": "Assets/DSVCompat/{{DSV.Core/ConfigValue:AlexVariant}}/{{Target}}.png",
+			"When":
+			{
+				"HasMod |contains= DSV.Core": true,
+				"DSV.Core/ConfigValue:AlexVariant |contains= Vanilla, off": false
+			}
+		},
+		{
+			"LogName": "DSV Compat - Haley",
+			"Action": "EditImage",
+			"Target": "Characters/HaleyOutfit1, Portraits/HaleyOutfit1, Characters/HaleyOutfit2, Portraits/HaleyOutfit2, Characters/HaleyOutfit3, Portraits/HaleyOutfit3",
+			"FromFile": "Assets/DSVCompat/{{DSV.Core/ConfigValue:HaleyVariant}}/{{Target}}.png",
+			"When":
+			{
+				"HasMod |contains= DSV.Core": true,
+				"DSV.Core/ConfigValue:HaleyVariant |contains= Vanilla, off": false
+			}
+		}
+	]
+}

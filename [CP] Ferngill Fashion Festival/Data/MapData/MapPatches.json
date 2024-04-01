@@ -1,0 +1,335 @@
+{
+    "Changes": [
+        // Hat Mouse Shop Patch
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_FF_FashionShow",
+            "PatchMode": "Replace",
+            "FromFile": "Assets/Maps/HatMouseShop.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 4,
+                "Height": 5
+            },
+            "ToArea": {
+                "X": 17,
+                "Y": 18,
+                "Width": 4,
+                "Height": 5
+            },
+            "When":
+            {
+                "HasFlag |contains= FashionShowNoDisguise": true
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_FF_FashionShow",
+            "PatchMode": "Replace",
+            "FromFile": "Assets/Maps/HatMouseShop_Disguise.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 4,
+                "Height": 5
+            },
+            "ToArea": {
+                "X": 17,
+                "Y": 18,
+                "Width": 4,
+                "Height": 5
+            },
+            "When":
+            {
+                "HasFlag |contains= FashionShowMouseDisguise": true
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_FF_FashionShow",
+            "PatchMode": "Replace",
+            "FromFile": "Assets/Maps/HatMouseSprite.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 1,
+                "Height": 2
+            },
+            "ToArea": {
+                "X": 16,
+                "Y": 20,
+                "Width": 1,
+                "Height": 2
+            },
+            "When":
+            {
+                "HasFlag |contains= FashionShowNoDisguise": true
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_FF_FashionShow",
+            "PatchMode": "Replace",
+            "FromFile": "Assets/Maps/HatMouseDisguiseSprite.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 1,
+                "Height": 2
+            },
+            "ToArea": {
+                "X": 16,
+                "Y": 20,
+                "Width": 1,
+                "Height": 2
+            },
+            "When":
+            {
+                "HasFlag |contains= FashionShowMouseDisguise": true
+            }
+        },
+        // Rose Shop Patch
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_FF_FashionShow",
+            "PatchMode": "Replace",
+            "FromFile": "Assets/Maps/RoseShop.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 4,
+                "Height": 5
+            },
+            "ToArea": {
+                "X": 12,
+                "Y": 27,
+                "Width": 4,
+                "Height": 5
+            },
+            "When":
+            {
+                "HasFlag |contains= FashionShowNoDisguise": true,
+                "HasMod |contains= wildflour.atelieralchemist": true
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_FF_FashionShow",
+            "PatchMode": "Replace",
+            "FromFile": "Assets/Maps/RoseShop_Disguise.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 4,
+                "Height": 5
+            },
+            "ToArea": {
+                "X": 12,
+                "Y": 27,
+                "Width": 4,
+                "Height": 5
+            },
+            "When":
+            {
+                "HasFlag |contains= FashionShowMouseDisguise": true,
+                "HasMod |contains= wildflour.atelieralchemist": true
+            }
+        },
+        // Mod Compatibility Shop Patches
+        {
+            "LogName": "Lumisteria Clothes Shop",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_FF_FashionShow",
+            "PatchMode": "Replace",
+            "FromFile": "Assets/Maps/MoiraShop.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 4,
+                "Height": 5
+            },
+            "ToArea": {
+                "X": 41,
+                "Y": 31,
+                "Width": 4,
+                "Height": 5
+            },
+            "When":
+            {
+                "HasMod |contains= Lumisteria.LumisteriaClothes": true,
+                "HasMod |contains= Lumisteria.MtVapius": false,
+                "PostFestivalShops": "true"
+            }
+        },
+        {
+            "LogName": "VMV Clothes Shop",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_FF_FashionShow",
+            "PatchMode": "Replace",
+            "FromFile": "Assets/Maps/MoiraShopVMV.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 4,
+                "Height": 5
+            },
+            "ToArea": {
+                "X": 41,
+                "Y": 31,
+                "Width": 4,
+                "Height": 5
+            },
+            "When":
+            {
+                "HasMod |contains= Lumisteria.LumisteriaClothes": false,
+                "HasMod |contains= Lumisteria.MtVapius": true,
+                "Relationship:MoiraDuboisVMV": "Friendly",
+                "PostFestivalShops": "true"
+            }
+        },
+        {
+            "LogName": "Faye's Shop",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_FF_FashionShow",
+            "PatchMode": "Replace",
+            "FromFile": "Assets/Maps/FayeShop.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 4,
+                "Height": 5
+            },
+            "ToArea": {
+                "X": 12,
+                "Y": 21,
+                "Width": 4,
+                "Height": 5
+            },
+            "When":
+            {
+                "HasMod |contains= Rafseazz.RSVCP": true
+            }
+        },
+        /*{
+            "LogName": "Paisley's Bridal Boutique Shop",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_FF_FashionShow",
+            "PatchMode": "Replace",
+            "FromFile": "Assets/Maps/PaisleyShop.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 4,
+                "Height": 5
+            },
+            "ToArea": {
+                "X": 6,
+                "Y": 19,
+                "Width": 4,
+                "Height": 5
+            },
+            "When":
+            {
+                "HasMod |contains= Elaho.ElahosWeddingOutfits": true,
+                "PostFestivalShops": "true"
+            }
+        },
+        {
+            "LogName": "Ragnarok Hats Shop",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_FF_FashionShow",
+            "PatchMode": "Replace",
+            "FromFile": "Assets/Maps/RagnarokShop.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 5,
+                "Height": 5
+            },
+            "ToArea": {
+                "X": 22,
+                "Y": 32,
+                "Width": 5,
+                "Height": 5
+            },
+            "When":
+            {
+                "HasMod |contains= Seyph.RagnarokOnlineHats": true,
+                "PostFestivalShops": "true"
+            }
+        },
+        {
+            "LogName": "Kisekae Skirts Shop",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_FF_FashionShow",
+            "PatchMode": "Replace",
+            "FromFile": "Assets/Maps/KisekaeShop.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 4,
+                "Height": 5
+            },
+            "ToArea": {
+                "X": 61,
+                "Y": 33,
+                "Width": 4,
+                "Height": 5
+            },
+            "When":
+            {
+                "HasMod |contains= JA.kisekaeskirts": true,
+                "PostFestivalShops": "true"
+            }
+        },
+        {
+            "LogName": "Pride Shirts Shop",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_FF_FashionShow",
+            "PatchMode": "Replace",
+            "FromFile": "Assets/Maps/PrideShop.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 4,
+                "Height": 5
+            },
+            "ToArea": {
+                "X": 78,
+                "Y": 21,
+                "Width": 4,
+                "Height": 5
+            },
+            "When":
+            {
+                "HasMod |contains= transrights-gayrights.shirtsja": true,
+                "PostFestivalShops": "true"
+            }
+        },
+        {
+            "LogName": "Syd's Plaids Shop",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_FF_FashionShow",
+            "PatchMode": "Replace",
+            "FromFile": "Assets/Maps/SydPlaidShop.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 4,
+                "Height": 5
+            },
+            "ToArea": {
+                "X": 73,
+                "Y": 16,
+                "Width": 4,
+                "Height": 5
+            },
+            "When":
+            {
+                "HasMod |contains= Sydney.SydsPlaidsJA": true,
+                "PostFestivalShops": "true"
+            }
+        }*/
+    ]
+}

@@ -1,0 +1,232 @@
+{
+    "Changes": [
+        {
+            "LogName": "Load Portraits",
+            "Action": "Load",
+            "Target": "Portraits/FFFShopEmily, Portraits/FFFShopFaye, Portraits/FFFShopRose, Portraits/FFFShopRoseDisguise, Portraits/FFFShopHatmouse, Portraits/FFFShopHatmouseDisguise, Portraits/FFFShopWisteria, Portraits/FFFShopMoira, Portraits/FFFShopPaisley",
+            "FromFile": "Assets/ShopAssets/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "Load UI",
+            "Action": "Load",
+            "Target": "Mods/UNA.FF.CP/UI",
+            "FromFile": "Assets/ShopAssets/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "Add Shops",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                "ShopFashionEmily": {
+                    "ID": "ShopFashionEmily",
+                    "Owners": [
+                        {
+                            "Condition": null,
+                            "Portrait": "Portraits/FFFShopEmily",
+                            "Dialogues": [
+                                {
+                                    "Dialogue": "{{i18n:ShopDialogue.EmilyShop}}"
+                                }
+                            ],
+                            "Name": "AnyOrNone",
+                            "Id": "AnyOrNone"
+                        }
+                    ],
+                    "VisualTheme": [
+                        {
+                            "WindowBorderTexture": "Mods\\UNA.FF.CP\\UI",
+                            "WindowBorderSourceRect": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 18,
+                                "Height": 18
+                            },
+                            "PortraitBackgroundTexture": "Mods\\UNA.FF.CP\\UI",
+                            "PortraitBackgroundSourceRect": {
+                                "X": 18,
+                                "Y": 0,
+                                "Width": 74,
+                                "Height": 74
+                            }
+                        }
+                    ],
+                    "PriceModifiers": null,
+                    "Items": [
+                        {
+                            "Id": "FFFShopEmily.Pants",
+                            "ItemId": "RANDOM_ITEMS (P) 0 14",
+                            "MaxItems": 3,
+                            "Price": 1000,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player",
+                        },
+                        {
+                            "Id": "FFFShopEmily.Shirts",
+                            "ItemId": "RANDOM_ITEMS (S) 1000 1285",
+                            "MaxItems": 9,
+                            "Price": 1000,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player",
+                        }
+                    ]
+                },
+                "DecoWisteria": {
+                    "ID": "DecoWisteria",
+                    "Owners": [
+                        {
+                            "Condition": null,
+                            "Portrait": "Portraits/FFFShopWisteria",
+                            "Dialogues": [
+                                {
+                                    "Dialogue": "{{i18n:ShopDialogue.WisteriaShop}}"
+                                }
+                            ],
+                            "Name": "AnyOrNone",
+                            "Id": "AnyOrNone"
+                        }
+                    ],
+                    "PriceModifiers": null,
+                    "Items": [
+                        {
+                            "Id": "FFFDecoWisteria.Furniture",
+                            "ItemId": "RANDOM_ITEMS (F)",
+                            "PerItemCondition": "ITEM_ID_PREFIX Target UNA.FF.CP_WisteriaDeco",
+                            "MaxItems": 20,
+                            "AvailableStockLimit": "Player"
+                        }
+                    ]
+                },
+                "ShopFashionHatmouse": {
+                    "ID": "ShopFashionHatmouse",
+                    "Owners": [
+                        {
+                            "Condition": null,
+                            "Portrait": "Portraits/FFFShopHatmouse",
+                            "Dialogues": [
+                                {
+                                    "Dialogue": "{{i18n:ShopDialogue.HatmouseShop}}"
+                                }
+                            ],
+                            "Name": "AnyOrNone",
+                            "Id": "AnyOrNone"
+                        }
+                    ],
+                    "PriceModifiers": null,
+                    "Items": [
+                        {
+                            "Id": "FFFShopHatMouse.Hats",
+                            "ItemId": "RANDOM_ITEMS (H)",
+                            "MaxItems": 6,
+                            "Price": 1000,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player"
+                        }
+                    ]
+                },
+                "ShopFashionHatmouseDisguise": {
+                    "ID": "ShopFashionHatmouseDisguise",
+                    "Owners": [
+                        {
+                            "Condition": null,
+                            "Portrait": "Portraits/FFFShopHatmouseDisguise",
+                            "Dialogues": [
+                                {
+                                    "Dialogue": "{{i18n:ShopDialogue.HatmouseShop}}"
+                                }
+                            ],
+                            "Name": "AnyOrNone",
+                            "Id": "AnyOrNone"
+                        }
+                    ],
+                    "PriceModifiers": null,
+                    "Items": [
+                        {
+                            "Id": "FFFShopHatMouseDisguise.Hats",
+                            "ItemId": "RANDOM_ITEMS (H)",
+                            "MaxItems": 6,
+                            "Price": 1000,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player"
+                        }
+                    ]
+                },
+                "ShopFashionRose": {
+                    "ID": "ShopFashionRose",
+                    "Owners": [
+                        {
+                            "Condition": null,
+                            "Portrait": "Portraits/FFFShopRose",
+                            "Dialogues": [
+                                {
+                                    "Dialogue": "{{i18n:ShopDialogue.RoseShop}}"
+                                }
+                            ],
+                            "Name": "AnyOrNone",
+                            "Id": "AnyOrNone"
+                        }
+                    ],
+                    "PriceModifiers": null,
+                    "Items": [
+                        {
+                            "Id": "FFFShopRose.BakedGoods",
+                            "RandomItemId": [
+                                "(O)220",
+                                "(O)221",
+                                "(O)222",
+                                "(O)223",
+                                "(O)234",
+                                "(O)604",
+                                "(O)243",
+                                "(O)611",
+                                "(O)651",
+                                "(O)731",
+                                "(O)216",
+                            ],
+                            "MaxItems": 8,
+                            "AvailableStock": 3,
+                            "AvailableStockLimit": "Player"
+                        }
+                    ]
+                },
+                "ShopFashionRoseDisguise": {
+                    "ID": "ShopFashionRoseDisguise",
+                    "Owners": [
+                        {
+                            "Condition": null,
+                            "Portrait": "Portraits/FFFShopRoseDisguise",
+                            "Dialogues": [
+                                {
+                                    "Dialogue": "{{i18n:ShopDialogue.RoseShop}}"
+                                }
+                            ],
+                            "Name": "AnyOrNone",
+                            "Id": "AnyOrNone"
+                        }
+                    ],
+                    "PriceModifiers": null,
+                    "Items": [
+                        {
+                            "Id": "FFFShopRoseDisguise.BakedGoods",
+                            "RandomItemId": [
+                                "(O)220",
+                                "(O)221",
+                                "(O)222",
+                                "(O)223",
+                                "(O)234",
+                                "(O)604",
+                                "(O)243",
+                                "(O)611",
+                                "(O)651",
+                                "(O)731",
+                                "(O)216",
+                            ],
+                            "MaxItems": 8,
+                            "AvailableStock": 3,
+                            "AvailableStockLimit": "Player"
+                        }
+                    ]
+                },
+            }
+        }
+    ]
+}

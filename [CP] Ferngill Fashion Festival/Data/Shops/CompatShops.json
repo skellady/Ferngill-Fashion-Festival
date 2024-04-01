@@ -1,0 +1,275 @@
+{
+    "Changes": [
+        {
+            "LogName": "Add Moira VMV-less",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                "ShopFashionMoira": {
+                    "ID": "ShopFashionMoira",
+                    "Owners": [
+                        {
+                            "Condition": null,
+                            "Portrait": "Portraits/FFFShopMoira",
+                            "Dialogues": [
+                                {
+                                    "Dialogue": "{{i18n:ShopDialogue.MoiraShop}}"
+                                }
+                            ],
+                            "Name": "AnyOrNone",
+                            "Id": "AnyOrNone"
+                        }
+                    ],
+                    "PriceModifiers": null,
+                    "Items": [
+                        {
+                            "Id": "FFFShopMoira.Hats",
+                            "RandomItemId": [
+                                "(O)Autumn Leaves Crown",
+                                "(O)Dandelion Crown",
+                                "(O)Enchanter Hat",
+                                "(O)Fancy Spellcaster Hat",
+                                "(O)Gem Hat",
+                                "(O)Marigold Pin",
+                                "(O)Pansies Crown",
+                                "(O)Simple White Headband",
+                                "(O)Spring Leaves Crown",
+                                "(O)Starry Wizard Hat",
+                                "(O)Sweet Roses Crown",
+                                "(O)Traveling Witch Hat",
+                            ],
+                            "MaxItems": 4,
+                            "Price": 1000,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player",
+                        },
+                        {
+                            "Id": "FFFShopMoira.Shirts",
+                            "RandomItemId": [
+                                "(O)LumisteriaClothes-Shirt01",
+                                "(O)LumisteriaClothes-Shirt02",
+                                "(O)LumisteriaClothes-Shirt03",
+                                "(O)LumisteriaClothes-Shirt04",
+                                "(O)LumisteriaClothes-Shirt05",
+                                "(O)LumisteriaClothes-Shirt06",
+                                "(O)LumisteriaClothes-Shirt07",
+                                "(O)LumisteriaClothes-Shirt08",
+                                "(O)LumisteriaClothes-Shirt09",
+                                "(O)LumisteriaClothes-Shirt10",
+                                "(O)LumisteriaClothes-Shirt11",
+                                "(O)LumisteriaClothes-Shirt12",
+                                "(O)LumisteriaClothes-Shirt13",
+                                "(O)LumisteriaClothes-Shirt14",
+                                "(O)LumisteriaClothes-Shirt15",
+                                "(O)LumisteriaClothes-Shirt16",
+                                "(O)LumisteriaClothes-Shirt17",
+                                "(O)LumisteriaClothes-Shirt18",
+                                "(O)LumisteriaClothes-Shirt19",
+                            ],
+                            "MaxItems": 6,
+                            "Price": 1000,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player",
+                        },
+                        {
+                            "Id": "FFFShopMoira.Pants",
+                            "RandomItemId": [
+                                "(O)LumisteriaClothes-Pants01",
+                                "(O)LumisteriaClothes-Pants02",
+                                "(O)LumisteriaClothes-Pants03",
+                                "(O)LumisteriaClothes-Pants04",
+                                "(O)LumisteriaClothes-Pants05",
+                            ],
+                            "MaxItems": 2,
+                            "Price": 1000,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player",
+                        }
+                    ]
+                },
+            },
+            "When": {
+                "HasMod |contains= Lumisteria.LumisteriaClothes": true,
+                "HasMod |contains= Lumisteria.MtVapius": false,
+            }
+        },
+        {
+            "LogName": "Add Moira VMV",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                "ShopFashionMoiraVMV": {
+                    "ID": "ShopFashionMoiraVMV",
+                    "Owners": [
+                        {
+                            "Condition": null,
+                            "Portrait": "Portraits/FFFShopMoira",
+                            "Dialogues": [
+                                {
+                                    "Dialogue": "{{i18n:ShopDialogue.MoiraShop}}"
+                                }
+                            ],
+                            "Name": "AnyOrNone",
+                            "Id": "AnyOrNone"
+                        }
+                    ],
+                    "PriceModifiers": null,
+                    "Items": [
+                        {
+                            "Id": "FFFShopMoiraVMV.PrideBanners",
+                            "ItemId": "RANDOM_ITEMS (F)",
+                            "PerItemCondition": "ITEM_ID_PREFIX Target Lumisteria.MtVapius_PrideBanner",
+                            "MaxItems": 4,
+                            "Price": 1000,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player",
+                        },
+                        {
+                            "Id": "FFFShopMoiraVMV.PrideShirts",
+                            "ItemId": "RANDOM_ITEMS (S)",
+                            "PerItemCondition": "ITEM_ID_PREFIX Target Lumisteria.MtVapius_ShirtPride",
+                            "MaxItems": 3,
+                            "Price": 1000,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player",
+                        },
+                        {
+                            "Id": "FFFShopMoiraVMV.RandomShirt",
+                            "ItemId": "RANDOM_ITEMS (S)",
+                            "PerItemCondition": "ITEM_ID_PREFIX Target Lumisteria.MtVapius_Shirt0",
+                            "MaxItems": 3,
+                            "Price": 1000,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player",
+                        }
+                    ]
+                },
+            },
+            "When": {
+                "HasMod |contains= Lumisteria.LumisteriaClothes": false,
+                "HasMod |contains= Lumisteria.MtVapius": true,
+            }
+        },
+        {
+            "LogName": "Add Faye's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                "ShopFashionFaye": {
+                    "ID": "ShopFashionFaye",
+                    "Owners": [
+                        {
+                            "Condition": null,
+                            "Portrait": "Portraits/FFFShopFaye",
+                            "Dialogues": [
+                                {
+                                    "Dialogue": "{{i18n:ShopDialogue.FayeShop}}"
+                                }
+                            ],
+                            "Name": "AnyOrNone",
+                            "Id": "AnyOrNone"
+                        }
+                    ],
+                    "PriceModifiers": null,
+                    "Items": [
+                        {
+                            "Id": "FFFShopFaye.Shirts",
+                            "ItemId": "(S)Rafseazz.RSVCP_Flora_Golda_Shirt_F",        
+                            "MaxItems": 3,
+                            "Price": 1000,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player",
+                        },
+                        {
+                            "Id": "FFFShopFaye.Shirt2",
+                            "ItemId": "(S)Rafseazz.RSVCP_Flora_Golda_Shirt_M",         
+                            "MaxItems": 1,
+                            "Price": 1000,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player",
+                        },
+                        {
+                            "Id": "FFFShopFaye.Shirt3",
+                            "ItemId": "(S)Rafseazz.RSVCP_Juninja_Shirt",         
+                            "MaxItems": 1,
+                            "Price": 1000,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player",
+                        },
+                        {
+                            "Id": "FFFShopFaye.Shirt4",
+                            "ItemId": "(S)Rafseazz.RSVCP_Pika_Impersonation_Shirt_M",         
+                            "MaxItems": 1,
+                            "Price": 1000,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player",
+                        },
+                        {
+                            "Id": "FFFShopFaye.Shirt5",
+                            "ItemId": "(S)Rafseazz.RSVCP_Pika_Impersonation_Shirt_F",         
+                            "MaxItems": 1,
+                            "Price": 1000,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player",
+                        },
+                        {
+                            "Id": "FFFShopFaye.Shirt6",
+                            "ItemId": "(S)Rafseazz.RSVCP_Village_Color_Shirt_M",         
+                            "MaxItems": 1,
+                            "Price": 1000,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player",
+                        },
+                        {
+                            "Id": "FFFShopFaye.Shirt7",
+                            "ItemId": "(S)Rafseazz.RSVCP_Village_Color_Shirt_F",         
+                            "MaxItems": 1,
+                            "Price": 1000,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player",
+                        },
+                        {
+                            "Id": "FFFShopFaye.ConditionalShirts1",
+                            "RandomItemId": [
+                                "(S)Rafseazz.RSVCP_Cof-Faye_Jacket_M",
+                                "(S)Rafseazz.RSVCP_Cof-Faye_Jacket_F",
+                            ],
+                            "Condition": "PLAYER_HAS_MAIL Any RSV.FayeJacket",
+                            "MaxItems": 1,
+                            "Price": 1000,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player",
+                        },
+                        {
+                            "Id": "FFFShopFaye.ConditionalShirts2",
+                            "RandomItemId": [
+                                "(S)Rafseazz.RSVCP_Cray-Faye_Abstract_Shirt_M",
+                                "(S)Rafseazz.RSVCP_Cray-Faye_Abstract_Shirt_F",
+                            ],
+                            "Condition": "PLAYER_HAS_MAIL Any RSV.FayeMisc",
+                            "MaxItems": 1,
+                            "Price": 1000,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player",
+                        },
+                        {
+                            "Id": "FFFShopFaye.ConditionalShirts3",
+                            "RandomItemId": [
+                                "(S)Rafseazz.RSVCP_Faye-rytale_Pastel_M",
+                                "(S)Rafseazz.RSVCP_Faye-rytale_Pastel_F"
+                            ],
+                            "Condition": "PLAYER_HAS_MAIL Any RSV.FayePastel",
+                            "MaxItems": 1,
+                            "Price": 1000,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player",
+                        }
+                    ]
+                },
+            },
+            "When": {
+                "HasMod |contains= Rafseazz.RSVCP": true,
+            }
+        },
+    ]
+}

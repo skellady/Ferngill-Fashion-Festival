@@ -1,0 +1,484 @@
+{
+    "Changes": 
+	[ 
+		{
+			"LogName": "Emily Fashion Show - DropBox",
+			"Action": "EditMap",
+			"Target": "Maps/HaleyHouse",
+			"MapTiles": 
+			[
+				{
+					"Position": { "X": 16, "Y": 7},
+					"Layer": "Buildings",
+					"SetProperties": { "Action": "DropBox EmilyFashionDropbox" }
+				}
+			]
+		},
+		{ 
+			"LogName": "Emily Fashion Show - Special Order Data",
+            "Action": "EditData",
+            "Target": "Data/SpecialOrders",
+            "Entries": 
+			{
+                "Emily_FashionShow":
+				{
+                    "Name": "[Emily_FashionShow_Name]",
+                    "Requester": "Emily", 
+                    "Duration": "Month", 
+                    "Repeatable": "False", 
+					"RequiredTags": "", 
+                    "OrderType": "",
+                    "SpecialRule": "", 
+                    "Text": "[Emily_FashionShow_Body]",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    
+                    "Objectives": 
+					[
+						{
+							"Type": "Donate",
+							"Text": "[Emily_FashionShow_Objective0]",
+							"RequiredCount": "10",
+							"Data": 
+							{
+								"DropBox": "EmilyFashionDropbox",
+								"DropBoxGameLocation": "HaleyHouse",
+								"DropBoxIndicatorLocation": "16 6",
+								"MinimumCapacity": "36",
+								"AcceptedContextTags": "item_cloth"
+							}
+						},
+						{
+							"Type": "Donate",
+							"Text": "[Emily_FashionShow_Objective1]",
+							"RequiredCount": "3",
+							"Data": 
+							{
+								"DropBox": "EmilyFashionDropbox",
+								"DropBoxGameLocation": "HaleyHouse",
+								"DropBoxIndicatorLocation": "16 6",
+								"MinimumCapacity": "36",
+								"AcceptedContextTags": "color_red/color_salmon/color_dark_red/color_pink, category_gem/category_minerals/category_vegetable/category_fruits/category_flowers/category_greens"
+							}
+						},
+						{
+							"Type": "Donate",
+							"Text": "[Emily_FashionShow_Objective2]",
+							"RequiredCount": "3",
+							"Data": 
+							{
+								"DropBox": "EmilyFashionDropbox",
+								"DropBoxGameLocation": "HaleyHouse",
+								"DropBoxIndicatorLocation": "16 6",
+								"MinimumCapacity": "36",
+								"AcceptedContextTags": "color_orange/color_dark_orange/color_dark_brown/color_brown/color_copper, category_gem/category_minerals/category_vegetable/category_fruits/category_flowers/category_greens"
+							}
+						}, 
+						{
+							"Type": "Donate",
+							"Text": "[Emily_FashionShow_Objective3]",
+							"RequiredCount": "3",
+							"Data": 
+							{
+								"DropBox": "EmilyFashionDropbox",
+								"DropBoxGameLocation": "HaleyHouse",
+								"DropBoxIndicatorLocation": "16 6",
+								"MinimumCapacity": "36",
+								"AcceptedContextTags": "color_yellow/color_dark_yellow/color_gold/color_sand, category_gem/category_minerals/category_vegetable/category_fruits/category_flowers/category_greens"
+							}
+						}, 
+						{
+							"Type": "Donate",
+							"Text": "[Emily_FashionShow_Objective4]",
+							"RequiredCount": "3",
+							"Data": 
+							{
+								"DropBox": "EmilyFashionDropbox",
+								"DropBoxGameLocation": "HaleyHouse",
+								"DropBoxIndicatorLocation": "16 6",
+								"MinimumCapacity": "36",
+								"AcceptedContextTags": "color_green/color_dark_green/color_lime/color_yellow_green/color_jade, category_gem/category_minerals/category_vegetable/category_fruits/category_flowers/category_greens"
+							}
+						}, 
+						{
+							"Type": "Donate",
+							"Text": "[Emily_FashionShow_Objective5]",
+							"RequiredCount": "3",
+							"Data": 
+							{
+								"DropBox": "EmilyFashionDropbox",
+								"DropBoxGameLocation": "HaleyHouse",
+								"DropBoxIndicatorLocation": "16 6",
+								"MinimumCapacity": "36",
+								"AcceptedContextTags": "color_blue/color_dark_blue/color_dark_cyan/color_light_cyan/color_cyan/color_aquamarine, category_gem/category_minerals/category_vegetable/category_fruits/category_flowers/category_greens"
+							}
+						}, 
+						{
+							"Type": "Donate",
+							"Text": "[Emily_FashionShow_Objective6]",
+							"RequiredCount": "3",
+							"Data": 
+							{
+								"DropBox": "EmilyFashionDropbox",
+								"DropBoxGameLocation": "HaleyHouse",
+								"DropBoxIndicatorLocation": "16 6",
+								"MinimumCapacity": "36",
+								"AcceptedContextTags": "color_purple/color_dark_purple/color_dark_pink/color_pale_violet_red/color_poppyseed/color_iridium, category_gem/category_minerals/category_vegetable/category_fruits/category_flowers/category_greens"
+							}
+						}
+                    ],
+                    "Rewards": 
+					[
+                        {
+                            "Type": "Money",
+                            "Data": 
+							{
+                                "Amount": "3500"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": 
+							{
+                                "MailReceived": "FashionShowLetter",
+								"NoLetter": "false"
+                            }
+                        },
+						{
+							"Type": "Friendship",
+							"Data": { "Amount": "125" }
+						}
+                    ]
+                },
+                "Emily_SpringFashion":
+				{
+                    "Name": "[Emily_SpringFashion_Name]",
+                    "Requester": "Emily", 
+                    "Duration": "Month", 
+                    "Repeatable": "True", 
+					"RequiredTags": "season_spring, !dropbox_EmilyFashionDropbox, mail_FashionShowComplete", 
+                    "OrderType": "",
+                    "SpecialRule": "", 
+                    "Text": "[Emily_SpringFashion_Body]",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "Objectives": 
+					[
+						{
+							"Type": "Donate",
+							"Text": "[Emily_SpringFashion_Objective0]",
+							"RequiredCount": "5",
+							"Data":
+							{
+								"DropBox": "EmilyFashionDropbox",
+								"DropBoxGameLocation": "HaleyHouse",
+								"DropBoxIndicatorLocation": "16 6",
+								"MinimumCapacity": "36",
+								"AcceptedContextTags": "id_c_1215/id_c_1011/id_c_1012/id_c_1027/id_c_1034/id_c_1042/id_c_1135/id_c_1174/id_c_1175/id_c_1180/id_c_1189/id_c_1193/id_c_1205/id_c_1207/id_c_1208/id_c_1228/id_c_1245/id_c_1251/id_c_1254/id_c_1258/id_c_1270/id_c_1281/id_c_1286/id_c_1287/id_c_1291/id_c_1295"
+							}
+						},
+						{
+							"Type": "Donate",
+							"Text": "[Emily_SpringFashion_Objective1]",
+							"RequiredCount": "10",
+							"Data": 
+							{
+								"DropBox": "EmilyFashionDropbox",
+								"DropBoxGameLocation": "HaleyHouse",
+								"DropBoxIndicatorLocation": "16 6",
+								"MinimumCapacity": "36",
+								"AcceptedContextTags": "color_pink/color_salmon/color_dark_pink/color_pale_violet_red, category_gem/category_minerals/category_vegetable/category_fruits/category_flowers/category_greens"
+							}
+						},
+						{
+							"Type": "Donate",
+							"Text": "[Emily_SpringFashion_Objective2]",
+							"RequiredCount": "10",
+							"Data": 
+							{
+								"DropBox": "EmilyFashionDropbox",
+								"DropBoxGameLocation": "HaleyHouse",
+								"DropBoxIndicatorLocation": "16 6",
+								"MinimumCapacity": "36",
+								"AcceptedContextTags": "color_green/color_dark_green/color_lime/color_yellow_green/color_jade, category_gem/category_minerals/category_vegetable/category_fruits/category_flowers/category_greens"
+							}
+						}
+                    ],
+                    "Rewards": 
+					[
+                        {
+                            "Type": "Money",
+                            "Data": 
+							{
+                                "Amount": "4500"
+                            }
+                        },
+						{
+							"Type": "Friendship",
+							"Data": { "Amount": "125" }
+						}
+                    ]
+				},
+                "Emily_SummerFashion":
+				{
+                    "Name": "[Emily_SummerFashion_Name]",
+                    "Requester": "Emily", 
+                    "Duration": "Month", 
+                    "Repeatable": "True", 
+					"RequiredTags": "season_summer, !dropbox_EmilyFashionDropbox, mail_FashionShowComplete", 
+                    "OrderType": "",
+                    "SpecialRule": "", 
+                    "Text": "[Emily_SummerFashion_Body]",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "Objectives": 
+					[
+						{
+							"Type": "Donate",
+							"Text": "[Emily_SummerFashion_Objective0]",
+							"RequiredCount": "5",
+							"Data":
+							{
+								"DropBox": "EmilyFashionDropbox",
+								"DropBoxGameLocation": "HaleyHouse",
+								"DropBoxIndicatorLocation": "16 6",
+								"MinimumCapacity": "36",
+								"AcceptedContextTags": "id_c_1005/id_c_1008/id_c_1006/id_c_1009/id_c_1019/id_c_1187/id_c_1190/id_c_1161/id_c_1163/id_c_1204/id_c_1219/id_c_1222/id_c_1225/id_c_1021/id_c_1230/id_c_1238/id_c_1240/id_c_1244/id_c_1245/id_c_1246/id_c_1260/id_c_1269/id_c_1294/id_c_1293/id_c_1296"
+							}
+						},
+						{
+							"Type": "Donate",
+							"Text": "[Emily_SummerFashion_Objective1]",
+							"RequiredCount": "10",
+							"Data": 
+							{
+								"DropBox": "EmilyFashionDropbox",
+								"DropBoxGameLocation": "HaleyHouse",
+								"DropBoxIndicatorLocation": "16 6",
+								"MinimumCapacity": "36",
+								"AcceptedContextTags": "color_dark_cyan/color_light_cyan/color_cyan/color_aquamarine, category_gem/category_minerals/category_vegetable/category_fruits/category_flowers/category_greens"
+							}
+						},
+						{
+							"Type": "Donate",
+							"Text": "[Emily_SummerFashion_Objective2]",
+							"RequiredCount": "10",
+							"Data": 
+							{
+								"DropBox": "EmilyFashionDropbox",
+								"DropBoxGameLocation": "HaleyHouse",
+								"DropBoxIndicatorLocation": "16 6",
+								"MinimumCapacity": "36",
+								"AcceptedContextTags": "color_yellow/color_dark_yellow/color_gold/color_sand, category_gem/category_minerals/category_vegetable/category_fruits/category_flowers/category_greens"
+							}
+						}
+                    ],
+                    "Rewards": 
+					[
+                        {
+                            "Type": "Money",
+                            "Data": 
+							{
+                                "Amount": "4500"
+                            }
+                        },
+						{
+							"Type": "Friendship",
+							"Data": { "Amount": "125" }
+						}
+                    ]
+                },
+                "Emily_FallFashion":
+				{
+                    "Name": "[Emily_FallFashion_Name]",
+                    "Requester": "Emily", 
+                    "Duration": "Month", 
+                    "Repeatable": "True", 
+					"RequiredTags": "season_fall, !dropbox_EmilyFashionDropbox, mail_FashionShowComplete", 
+                    "OrderType": "",
+                    "SpecialRule": "", 
+                    "Text": "[Emily_FallFashion_Body]",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "Objectives": 
+					[
+						{
+							"Type": "Donate",
+							"Text": "[Emily_FallFashion_Objective0]",
+							"RequiredCount": "5",
+							"Data":
+							{
+								"DropBox": "EmilyFashionDropbox",
+								"DropBoxGameLocation": "HaleyHouse",
+								"DropBoxIndicatorLocation": "16 6",
+								"MinimumCapacity": "36",
+								"AcceptedContextTags": "id_c_1000/id_c_1013/id_c_1015/id_c_1035/id_c_1137/id_c_1156/id_c_1162/id_c_1164/id_c_1166/id_c_1184/id_c_1186/id_c_1192/id_c_1195/id_c_1198/id_c_1201/id_c_1288/id_c_1214/id_c_1225/id_c_1233/id_c_1238/id_c_1247/id_c_1282/id_c_1252/id_c_1262/id_c_1267/id_c_1275/id_c_1276/id_c_1280"
+							}
+						},
+						{
+							"Type": "Donate",
+							"Text": "[Emily_FallFashion_Objective1]",
+							"RequiredCount": "10",
+							"Data": 
+							{
+								"DropBox": "EmilyFashionDropbox",
+								"DropBoxGameLocation": "HaleyHouse",
+								"DropBoxIndicatorLocation": "16 6",
+								"MinimumCapacity": "36",
+								"AcceptedContextTags": "color_orange/color_dark_orange/color_copper, category_gem/category_minerals/category_vegetable/category_fruits/category_flowers/category_greens"
+							}
+						},
+						{
+							"Type": "Donate",
+							"Text": "[Emily_FallFashion_Objective2]",
+							"RequiredCount": "10",
+							"Data": 
+							{
+								"DropBox": "EmilyFashionDropbox",
+								"DropBoxGameLocation": "HaleyHouse",
+								"DropBoxIndicatorLocation": "16 6",
+								"MinimumCapacity": "36",
+								"AcceptedContextTags": "color_red/color_dark_red, category_gem/category_minerals/category_vegetable/category_fruits/category_flowers/category_greens"
+							}
+						}
+                    ],
+                    "Rewards": 
+					[
+                        {
+                            "Type": "Money",
+                            "Data": 
+							{
+                                "Amount": "4500"
+                            }
+                        },
+						{
+							"Type": "Friendship",
+							"Data": { "Amount": "125" }
+						}
+                    ]
+                },
+                "Emily_WinterFashion":
+				{
+                    "Name": "[Emily_WinterFashion_Name]",
+                    "Requester": "Emily", 
+                    "Duration": "Month", 
+                    "Repeatable": "True", 
+					"RequiredTags": "season_winter, !dropbox_EmilyFashionDropbox, mail_FashionShowComplete", 
+                    "OrderType": "",
+                    "SpecialRule": "", 
+                    "Text": "[Emily_WinterFashion_Body]",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "Objectives": 
+					[
+						{
+							"Type": "Donate",
+							"Text": "[Emily_WinterFashion_Objective0]",
+							"RequiredCount": "5",
+							"Data":
+							{
+								"DropBox": "EmilyFashionDropbox",
+								"DropBoxGameLocation": "HaleyHouse",
+								"DropBoxIndicatorLocation": "16 6",
+								"MinimumCapacity": "36",
+								"AcceptedContextTags": "id_c_1000/id_c_1016/id_c_1038/id_c_1123/id_c_1129/id_c_1222/id_c_1229/id_c_1282/id_c_1285/id_c_1132/id_c_1136/id_c_1139/id_c_1140/id_c_1141/id_c_1220/id_c_1242/id_c_1279/id_c_1290/id_c_1142/id_c_1213/id_c_1154/id_c_1159/id_c_1165/id_c_1071/id_c_1248/id_c_1278/id_c_1170/id_c_1171/id_c_1176/id_c_1178/id_c_1179/id_c_1218/id_c_1259/id_c_1273/id_c_1191/id_c_1200/id_c_1206/id_c_1212/id_c_1216/id_c_1217/id_c_1261/id_c_1265"
+							}
+						},
+						{
+							"Type": "Donate",
+							"Text": "[Emily_WinterFashion_Objective1]",
+							"RequiredCount": "10",
+							"Data": 
+							{
+								"DropBox": "EmilyFashionDropbox",
+								"DropBoxGameLocation": "HaleyHouse",
+								"DropBoxIndicatorLocation": "16 6",
+								"MinimumCapacity": "36",
+								"AcceptedContextTags": "color_blue/color_dark_blue, category_gem/category_minerals/category_vegetable/category_fruits/category_flowers/category_greens"
+							}
+						},
+						{
+							"Type": "Donate",
+							"Text": "[Emily_WinterFashion_Objective2]",
+							"RequiredCount": "10",
+							"Data": 
+							{
+								"DropBox": "EmilyFashionDropbox",
+								"DropBoxGameLocation": "HaleyHouse",
+								"DropBoxIndicatorLocation": "16 6",
+								"MinimumCapacity": "36",
+								"AcceptedContextTags": "color_white, category_gem/category_minerals/category_vegetable/category_fruits/category_flowers/category_greens"
+							}
+						}
+                    ],
+                    "Rewards": 
+					[
+                        {
+                            "Type": "Money",
+                            "Data": 
+							{
+                                "Amount": "4500"
+                            }
+                        },
+						{
+							"Type": "Friendship",
+							"Data": { "Amount": "125" }
+						}
+                    ]
+                }
+            }
+        },       
+		{
+			"LogName": "Emily Fashion Show - Special Order Strings",
+			"Action": "EditData",
+            "Target": "Strings/SpecialOrderStrings",			
+			"Entries": 
+			{
+				// FASHION SHOW
+				"Emily_FashionShow_Name": "{{i18n:SpecialOrder.Emily_FashionShow_Name}}",
+				"Emily_FashionShow_Body": "{{i18n:SpecialOrder.Emily_FashionShow_Body}}",
+				"Emily_FashionShow_Objective0": "{{i18n:SpecialOrder.Emily_FashionShow_Objective0}}",
+				"Emily_FashionShow_Objective1": "{{i18n:SpecialOrder.Emily_FashionShow_Objective1}}",
+				"Emily_FashionShow_Objective2": "{{i18n:SpecialOrder.Emily_FashionShow_Objective2}}",
+				"Emily_FashionShow_Objective3": "{{i18n:SpecialOrder.Emily_FashionShow_Objective3}}",
+				"Emily_FashionShow_Objective4": "{{i18n:SpecialOrder.Emily_FashionShow_Objective4}}",
+				"Emily_FashionShow_Objective5": "{{i18n:SpecialOrder.Emily_FashionShow_Objective5}}",
+				"Emily_FashionShow_Objective6": "{{i18n:SpecialOrder.Emily_FashionShow_Objective6}}",
+				// SPRING FASHION
+				"Emily_SpringFashion_Name": "{{i18n:SpecialOrder.Emily_SpringFashion_Name}}",
+				"Emily_SpringFashion_Body": "{{i18n:SpecialOrder.Emily_SpringFashion_Body}}",
+				"Emily_SpringFashion_Objective0": "{{i18n:SpecialOrder.Emily_SpringFashion_Objective0}}",
+				"Emily_SpringFashion_Objective1": "{{i18n:SpecialOrder.Emily_SpringFashion_Objective1}}",
+				"Emily_SpringFashion_Objective2": "{{i18n:SpecialOrder.Emily_SpringFashion_Objective2}}",
+				// SUMMER FASHION
+				"Emily_SummerFashion_Name": "{{i18n:SpecialOrder.Emily_SummerFashion_Name}}",
+				"Emily_SummerFashion_Body": "{{i18n:SpecialOrder.Emily_SummerFashion_Body}}",
+				"Emily_SummerFashion_Objective0": "{{i18n:SpecialOrder.Emily_SummerFashion_Objective0}}",
+				"Emily_SummerFashion_Objective1": "{{i18n:SpecialOrder.Emily_SummerFashion_Objective1}}",
+				"Emily_SummerFashion_Objective2": "{{i18n:SpecialOrder.Emily_SummerFashion_Objective2}}",
+				// FALL FASHION
+				"Emily_FallFashion_Name": "{{i18n:SpecialOrder.Emily_FallFashion_Name}}",
+				"Emily_FallFashion_Body": "{{i18n:SpecialOrder.Emily_FallFashion_Body}}",
+				"Emily_FallFashion_Objective0": "{{i18n:SpecialOrder.Emily_FallFashion_Objective0}}",
+				"Emily_FallFashion_Objective1": "{{i18n:SpecialOrder.Emily_FallFashion_Objective1}}",
+				"Emily_FallFashion_Objective2": "{{i18n:SpecialOrder.Emily_FallFashion_Objective2}}",
+				// WINTER FASHION
+				"Emily_WinterFashion_Name": "{{i18n:SpecialOrder.Emily_WinterFashion_Name}}",
+				"Emily_WinterFashion_Body": "{{i18n:SpecialOrder.Emily_WinterFashion_Body}}",
+				"Emily_WinterFashion_Objective0": "{{i18n:SpecialOrder.Emily_WinterFashion_Objective0}}",
+				"Emily_WinterFashion_Objective1": "{{i18n:SpecialOrder.Emily_WinterFashion_Objective1}}",
+				"Emily_WinterFashion_Objective2": "{{i18n:SpecialOrder.Emily_WinterFashion_Objective2}}"
+			}
+		},		
+		{
+			"LogName": "Emily Fashion Show - Special Order Mail",
+			"Action": "EditData",
+            "Target": "Data/Mail",
+			"Entries": 
+			{
+				"FashionShowLetter": "{{i18n:SpecialOrder.FashionShowLetter.Body}}[#]{{i18n:SpecialOrder.FashionShowLetter.Title}}",				
+				"FashionShowComplete": "{{i18n:SpecialOrder.FashionShowComplete.Body}}[#]{{i18n:SpecialOrder.FashionShowComplete.Title}}"
+			}
+		}
+	]
+}

@@ -1,0 +1,176 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/Spring19",
+            "When": {
+                "HasMod: |contains=tiakall.jortsandjean": true,
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "Set-Up_additionalCharacters"],
+                    "Value": "JortsCat 35 31 up/JeanCat 36 31 up",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "MainEvent_additionalCharacters"],
+                    "Value": "JortsCat 35 31 up/JeanCat 36 31 up",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/Spring19",
+            "When": {
+                "HasMod: |contains=yri.yri": true,
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "Set-Up_additionalCharacters"],
+                    "Value": "Yri 51 29 right/Charles 52 29 left",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "MainEvent_additionalCharacters"],
+                    "Value": "Yri 39 32 up/Charles 40 32 up",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/Spring19",
+            "When": {
+                "HasMod: |contains=DSVTeam.DiverseStardewValley": true,
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "Set-Up_additionalCharacters"],
+                    "Value": "DSVMarigold 27 17 down",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "MainEvent_additionalCharacters"],
+                    "Value": "DSVMarigold 27 17 right",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/Spring19",
+            "When": {
+                "HasMod: |contains=Rafseazz.RSVCP": true,
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "Set-Up_additionalCharacters"],
+                    "Value": "Jeric 40 18 down/Maddie 60 34 down/Kiarra 53 28 up/Faye 14 24 down/Ian 55 27 down/Corine 56 27 down/Sean 16 27 right/Blair 17 27 right/Irene 56 22 down/Ysabelle 57 36 up",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "MainEvent_additionalCharacters"],
+                    "Value": "Jeric 38 15 left/Maddie 40 34 up/Kiarra 34 23 right/Faye 34 28 right/Ian 34 34 up/Corine 46 24 left/Sean 40 33 up/Blair 41 33 up/Irene 30 29 right/Ysabelle 39 15 right",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+          "Action": "EditData",
+          "Target": "Data/Festivals/Spring19",
+          "When": {
+              "HasMod: |contains=Rafseazz.RSVCP": true,
+              "HasSeenEvent": 75160254
+          },
+          "TextOperations": [
+              {
+                  "Operation": "Append",
+                  "Target": ["Entries", "Set-Up_additionalCharacters"],
+                  "Value": "Daia 21 26 right",
+                  "Delimiter": "/"
+              },
+              {
+                  "Operation": "Append",
+                  "Target": ["Entries", "MainEvent_additionalCharacters"],
+                  "Value": "Daia 46 25 left",
+                  "Delimiter": "/"
+              }
+          ]
+      },
+        {
+            "LogName":"Sterling Fashion Show",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring19",
+            "When": {
+                "HasMod: |contains=Himetarts.ARV.CP": true,
+            },
+            "TextOperations": [
+              {
+                "Operation": "Append",
+                "Target": [ "Entries", "Set-Up_additionalCharacters" ],
+                "Value": "Sterling 65 29 2",
+                "Delimiter": "/"
+              },
+              {
+                "Operation": "Append",
+                "Target": [ "Entries", "MainEvent_additionalCharacters" ],
+                "Value": "Sterling 65 29 2",
+                "Delimiter": "/"
+              }
+            ]
+          },
+          { 
+        "LogName":"Henry Fashion Show",
+        "Action": "EditData",
+        "Target": "Data/Festivals/spring19",
+        "When": {
+            "HasMod: |contains=Himetarts.ARV.CP": true,
+        },
+        "TextOperations": [
+          {
+            "Operation": "Append",
+            "Target": [ "Entries", "Set-Up_additionalCharacters" ],
+            "Value": "Henry 60 24 2",
+            "Delimiter": "/"
+          },
+          {
+            "Operation": "Append",
+            "Target": [ "Entries", "MainEvent_additionalCharacters" ],
+            "Value": "Henry 60 24 2",
+            "Delimiter": "/"
+          }
+        ]
+      },
+      { 
+        "LogName":"Mia Fashion Show",
+        "Action": "EditData",
+        "Target": "Data/Festivals/spring19",
+        "When": {
+            "HasMod: |contains=Himetarts.ARV.CP": true,
+        },
+        "TextOperations": [
+          {
+            "Operation": "Append",
+            "Target": [ "Entries", "Set-Up_additionalCharacters" ],
+            "Value": "Mia 60 23 3",
+            "Delimiter": "/"
+          },
+          {
+            "Operation": "Append",
+            "Target": [ "Entries", "MainEvent_additionalCharacters" ],
+            "Value": "Mia 42 22 1",
+            "Delimiter": "/"
+          }
+        ]
+      }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+  "Changes": [
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Saloon",
+      "Entries": {
+
+        "1740401{{EventOneModJamConditions}}": "playful/-100 -100/farmer 999 999 0 Leah 18 20 0 Marnie 9 22 3 Pam 7 18 1 Lewis 8 22 1 Gus 14 18 2 Emily 16 18 2 Shane 9 20 1 Pierre 11 20 3/skippable/ignoreCollisions farmer/viewport 15 20 clamp/pause 500/faceDirection Gus 2 true/move Emily 2 0 2/emote Emily 32 true/pause 200/move Gus -3 0 2/faceDirection Pierre 0 true/emote Leah 56 true/pause 450/speak Leah \"{{i18n:event-1740401.01}}\"/shake Leah 300/pause 300/addObject 18 18 842 1/playSound newRecipe/pause 300/move Gus -2 0 3 true/pause 300/emote Emily 16 true/pause 250/faceDirection Shane 0/pause 200/speak Emily \"{{i18n:event-1740401.02}}\"/textAboveHead Leah \"{{i18n:event-1740401.03}}\"/pause 400/warp farmer 14 24/playSound doorClose/move farmer 0 -1 0/faceDirection Gus 2/faceDirection Marnie 1 true/emote Gus 16 true/pause 450/speak Gus \"{{i18n:event-1740401.04}}\"/advancedMove farmer false 0 -2 2 0 0 -1 4 2000/faceDirection Gus 3/faceDirection Marnie 3/pause 450/shake Leah 300/pause 300/playSound newRecipe/removeTemporarySprites/speak Leah \"{{i18n:event-1740401.05}}\"/jump Emily/speak Emily \"{{i18n:event-1740401.06}}\"/jump Leah/speak Leah \"{{i18n:event-1740401.07}}\"/faceDirection farmer 1/emote farmer 8/faceDirection Leah 3/emote Leah 16 true/move Emily -2 0 2 true/pause 450/speak Leah \"{{i18n:event-1740401.08}}\"/speak Emily \"{{i18n:event-1740401.09}}\"/pause 500/faceDirection farmer 0 true/quickQuestion #{{i18n:event-1740401.10}}#{{i18n:event-1740401.11}}(break)speak Leah \"{{i18n:event-1740401.12}}\"(break)speak Emily \"{{i18n:event-1740401.13}}\"/speak Emily \"{{i18n:event-1740401.14}}\"/faceDirection Gus 2 true/faceDirection farmer 1 true/pause 100/speak Leah \"{{i18n:event-1740401.15}}\"/emote Emily 40/move Emily 1 0 2/speak Emily \"{{i18n:event-1740401.16}}\"/emote farmer 40 true/emote Leah 40 false/pause 600/speak Leah \"{{i18n:event-1740401.17}}\"/faceDirection farmer 1/emote farmer 40/jump Leah/pause 250/speak Leah \"{{i18n:event-1740401.18}}\"/emote Emily 40/speak Emily \"{{i18n:event-1740401.19}}\"/speak Leah \"{{i18n:event-1740401.20}}\"/faceDirection Leah 3/emote farmer 32/move Gus 2 0 2 true/unskippable/globalFade/viewport -999 999/end position 16 20"
+      }
+    },
+
+    // below: {{dynamic token if RSV is installed}}
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/HaleyHouse",
+      "Entries": {
+
+        "1740402{{EventTwoModJamConditions}}/e 1740401": "50s/-100 -100/farmer 7 20 1 Haley 4 20 0 Emily 13 24 0/advancedMove farmer false {{EventTwoLUTICompat}} 2000/pause 1000/advancedMove Haley true 2 0 4 1000 1 0 4 1000 -3 0 4 1000/viewport 12 22/pause 1000/emote Emily 56/speak Emily \"{{i18n:event-1740402.01}}\"/textAboveHead Haley \"$\"/emote farmer 32/speak Emily \"{{i18n:event-1740402.02 |FashionEmily1={{FashionEmily1}}}}\"/textAboveHead Haley \"<\"/pause 500/emote farmer 40/stopAdvancedMoves/advancedMove Haley false 8 0 0 1 2 1000/pause 500/{{FashionEmily2}}/emote Emily 20 true/pause 450/speak Emily \"{{i18n:event-1740402.08}}\"/emote Haley 60/speak Emily \"{{i18n:event-1740402.09}}\"/emote farmer 32/unskippable/globalFade/viewport -999 999/end position 14 22",
+      }
+    },
+
+    {
+      "LogName": "Emily SO Event",
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "Entries": {
+        "1740403/t 600 1200/e 1740402": "continue/64 15/farmer 64 16 2 Emily 64 18 0/pause 1500/speak Emily \"{{i18n:event-1740403.01}}\"/pause 500/emote farmer 20/pause 500/speak Emily \"{{i18n:event-1740403.02}}\"/pause 500/emote farmer 32/pause 1000/addSpecialOrder Emily_FashionShow/end"
+      }
+    },
+
+    {
+      "LogName": "Hat Mouse Event",
+      "Action": "EditData",
+      "Target": "Data/Events/Forest",
+      "Entries": {
+        "1740404/e 1740403": "playful/-2000 -2000/farmer 84 32 2/ignoreCollisions farmer/addTemporaryActor FFFHatMouse 16 32 -999 260 2 false/addTemporaryActor FFFHatmouse 16 32 -999 260 2 false/changeName FFFHatmouse Hat_Mouse/makeInvisible 74 30 97 30/makeInvisible 74 31 97 31/makeInvisible 74 32 97 32/makeInvisible 74 33 97 33/makeInvisible 74 34 97 34/makeInvisible 74 35 97 35/makeInvisible 74 36 97 36/makeInvisible 74 37 97 37/makeInvisible 74 38 97 38/makeInvisible 74 39 97 39/makeInvisible 74 40 97 40/warp FFFHatmouse 82 39 true/showFrame FFFHatmouse 16 true/move farmer 0 5 2 true/pause 200/viewport 84 39 true/pause 2500/waitForAllStationary/playSound Duggy/shake FFFHatmouse 500/message \"{{i18n:event-1740404.01}}\"/pause 100/shake FFFHatmouse 100/pause 200/shake FFFHatmouse 300/emote farmer 40 true/pause 450/faceDirection farmer 1/pause 300/faceDirection farmer 3 true/pause 450/faceDirection farmer 2/emote farmer 8 true/pause 450/shake FFFHatmouse 300/pause 300/shake FFFHatmouse 300/playSound Duggy/message \"{{i18n:event-1740404.02}}\"/move farmer 0 2 3/move farmer -1 0 3/emote farmer 40/message \"{{i18n:event-1740404.03}}\"/playSound Duggy/shake FFFHatmouse 300/pause 300/emote farmer 8 true/playSound Duggy/pause 300/shake FFFHatmouse 300/pause 300/playSound Duggy/shake FFFHatmouse 300/pause 300/playSound Duggy/shake FFFHatmouse 300/pause 300/playSound Duggy/shake FFFHatmouse 300/pause 300/playSound Duggy/playSound coin/showFrame FFFHatmouse 17/jump farmer/faceDirection farmer 3 true/animate farmer true true 100 73 73 73/startJittering/positionOffset farmer 4 0/pause 5/positionOffset farmer 4 0/pause 5/positionOffset farmer 4 0/pause 5/positionOffset farmer 4 0/pause 5/positionOffset farmer 4 0/pause 5/positionOffset farmer 4 0/pause 5/positionOffset farmer 4 0/pause 5/positionOffset farmer 4 0/pause 5/positionOffset farmer 4 0/pause 5/positionOffset farmer 4 0/pause 5/positionOffset farmer 4 0/pause 5/positionOffset farmer 4 0/pause 5/positionOffset farmer 4 0/pause 5/positionOffset farmer 4 0/pause 5/positionOffset farmer 4 0/pause 5/positionOffset farmer 4 0/pause 5/stopJittering/textAboveHead FFFHatmouse \"{{i18n:event-1740404.04}}\"/pause 500/shake FFFHatmouse 500/stopAnimation farmer/pause 500/playSound dwop/showFrame FFFHatmouse 18/pause 1000/speak FFFHatmouse \"{{i18n:event-1740404.05}}\"/emote farmer 60 true/pause 450/advancedMove farmer false -1 0 3 1000/pause 400/speak FFFHatmouse \"{{i18n:event-1740404.06}}\"/emote farmer 32/shake FFFHatmouse 300/pause 100/showFrame FFFHatmouse 19/speak FFFHatmouse \"{{i18n:event-1740404.07}}\"/pause 300/emote farmer 40/pause 550/quickQuestion #{{i18n:event-1740404.08}}#{{i18n:event-1740404.09}}(break)addMailReceived FashionShowMouseDisguise(break)addMailReceived FashionShowNoDisguise/speak FFFHatmouse \"{{i18n:event-1740404.10}}\"/faceDirection farmer 3/emote farmer 40 true/pause 450/speak FFFHatmouse \"{{i18n:event-1740404.11}}\"/emote farmer 20/pause 450/showFrame FFFHatmouse 18/speak FFFHatmouse \"{{i18n:event-1740404.12}}\"/faceDirection farmer 2/emote farmer 32/unskippable/globalFade/viewport -999 999/end position 83 39",
+      },
+      "When":
+      {
+          "HasMod |contains= wildflour.atelieralchemist": false
+      }
+    },
+    {
+      "LogName": "Hat Mouse Event - With Rose",
+      "Action": "EditData",
+      "Target": "Data/Events/Forest",
+      "Entries": {
+        "1740404/e 1740403": "playful/-2000 -2000/farmer 84 32 2/ignoreCollisions farmer/addTemporaryActor FFFHatMouse 16 32 -999 260 2 false/addTemporaryActor FFFHatmouse 16 32 -999 260 2 false/addTemporaryActor FFFRose 16 32 -999 260 2 false/changeName FFFHatmouse Hat_Mouse/changeName FFFRose Rose/makeInvisible 74 30 97 30/makeInvisible 74 31 97 31/makeInvisible 74 32 97 32/makeInvisible 74 33 97 33/makeInvisible 74 34 97 34/makeInvisible 74 35 97 35/makeInvisible 74 36 97 36/makeInvisible 74 37 97 37/makeInvisible 74 38 97 38/makeInvisible 74 39 97 39/makeInvisible 74 40 97 40/warp FFFHatmouse 82 39 true/showFrame FFFHatmouse 16 true/move farmer 0 5 2 true/pause 200/viewport 84 39 true/pause 2500/waitForAllStationary/playSound Duggy/shake FFFHatmouse 500/message \"{{i18n:event-1740404.01}}\"/pause 100/shake FFFHatmouse 100/pause 200/shake FFFHatmouse 300/emote farmer 40 true/pause 450/faceDirection farmer 1/pause 300/faceDirection farmer 3 true/pause 450/faceDirection farmer 2/emote farmer 8 true/pause 450/shake FFFHatmouse 300/pause 300/shake FFFHatmouse 300/playSound Duggy/message \"{{i18n:event-1740404.02}}\"/move farmer 0 2 3/move farmer -1 0 3/emote farmer 40/message \"{{i18n:event-1740404.03}}\"/playSound Duggy/shake FFFHatmouse 300/pause 300/emote farmer 8 true/playSound Duggy/pause 300/shake FFFHatmouse 300/pause 300/playSound Duggy/shake FFFHatmouse 300/pause 300/playSound Duggy/shake FFFHatmouse 300/pause 300/playSound Duggy/shake FFFHatmouse 300/pause 300/playSound Duggy/playSound coin/showFrame FFFHatmouse 17/jump farmer/faceDirection farmer 3 true/animate farmer true true 100 73 73 73/startJittering/positionOffset farmer 4 0/pause 5/positionOffset farmer 4 0/pause 5/positionOffset farmer 4 0/pause 5/positionOffset farmer 4 0/pause 5/positionOffset farmer 4 0/pause 5/positionOffset farmer 4 0/pause 5/positionOffset farmer 4 0/pause 5/positionOffset farmer 4 0/pause 5/positionOffset farmer 4 0/pause 5/positionOffset farmer 4 0/pause 5/positionOffset farmer 4 0/pause 5/positionOffset farmer 4 0/pause 5/positionOffset farmer 4 0/pause 5/positionOffset farmer 4 0/pause 5/positionOffset farmer 4 0/pause 5/positionOffset farmer 4 0/pause 5/stopJittering/textAboveHead FFFHatmouse \"{{i18n:event-1740404.04}}\"/pause 500/shake FFFHatmouse 500/stopAnimation farmer/pause 500/playSound dwop/showFrame FFFHatmouse 18/pause 1000/speak FFFHatmouse \"{{i18n:event-1740404.05}}\"/emote farmer 60 true/pause 450/advancedMove farmer false -1 0 3 1000/pause 400/speak FFFHatmouse \"{{i18n:event-1740404.06}}\"/emote farmer 32/shake FFFHatmouse 300/pause 100/showFrame FFFHatmouse 19/speak FFFHatmouse \"{{i18n:event-1740404.07}}\"/pause 300/emote farmer 40/warp FFFRose 106 34 true/faceDirection FFFRose 2 true/pause 550/quickQuestion #{{i18n:event-1740404.08}}#{{i18n:event-1740404.09}}(break)addMailReceived FashionShowMouseDisguise(break)addMailReceived FashionShowNoDisguise/speed FFFRose 8/speak FFFHatmouse \"{{i18n:event-1740404.13}}\"/stopMusic/playMusic crane_game_fast/pause 200/speak FFFRose \"{{i18n:event-1740404.14}}\"/advancedMove FFFRose false -8 0 0 5 -13 0 3 1000/faceDirection farmer 1/pause 200/emote FFFHatmouse 16 true/emote farmer 16 false/pause 2000/speak FFFRose \"{{i18n:event-1740404.15}}\"/speak FFFHatmouse \"{{i18n:event-1740404.16}}\"/speak FFFRose \"{{i18n:event-1740404.17}}\"/stopMusic/emote FFFHatmouse 20/playMusic playful/speak FFFHatmouse \"{{i18n:event-1740404.18}}\"/speed FFFRose 3/faceDirection farmer 3/emote farmer 40 true/pause 450/speak FFFHatmouse \"{{i18n:event-1740404.19}}\"/move FFFRose -1 0 3/faceDirection farmer 1/speak FFFRose \"{{i18n:event-1740404.20}}\"/faceDirection farmer 1/emote farmer 20 true/pause 450/showFrame FFFHatmouse 18/speak FFFHatmouse \"{{i18n:event-1740404.21}}\"/faceDirection farmer 2/emote farmer 32 true/emote FFFRose 56 true/unskippable/globalFade/viewport -999 999/end position 83 39"
+      },
+      "When":
+      {
+          "HasMod |contains= wildflour.atelieralchemist": true
+      }
+    }
+  ]
+}

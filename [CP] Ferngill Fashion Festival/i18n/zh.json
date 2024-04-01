@@ -1,0 +1,360 @@
+{
+    // CONFIG OPTIONS
+    //--------------    
+	
+	"config.ModJamMode.name": "Mod Jam Mode",
+	"config.ModJamMode.description": "删除了时尚节的特殊订单和活动要求，以便它从一开始就存在，适合想要更快地访问内容的人.",
+	"config.ModJamMode.values.True": "True",
+	"config.ModJamMode.values.False": "False",
+	
+	"config.ModShopsPostFestival.name": "Mod Shops Post Festival",
+	"config.ModShopsPostFestival.description": "切换为与其他模组（如 Lumisteria Clothing）兼容而添加的摊位是每年出现，还是仅在您至少访问过一次节日后出现.",
+	"config.ModShopsPostFestival.values.True": "True",
+	"config.ModShopsPostFestival.values.False": "False",
+
+    // EVENT DIALOGUE
+    //--------------
+
+    "event-1740401.01": "所以艾欧利特和我走在岸边，我开始思考海浪的潮起潮落..#$b#海风的气息启发了我，所以我在餐巾纸上涂鸦了这个$h",
+    "event-1740401.02": "它有一个奇妙的流动!$h#$b#我真的可以看到海浪的影响，我真想在现实中看看.",
+    "event-1740401.03": "谢谢!",
+    "event-1740401.04": "嗨。今天有点拥挤，但请坐.",
+    "event-1740401.05": "您想过来看看 WIP 吗？我觉得你真的得到了我的艺术.",
+    "event-1740401.06": "我会喜欢的！你也启发了我。也许我也应该尝试一下以海洋为主题的东西？?#$b#艾欧利特对海洋之美的看法绝对正确！颜色，声音，运动...他们都非常放松 .$1",
+    "event-1740401.07": "你完全可以做！艾欧利特在他的书中也做了海洋主题.$h#$b#我想在完成后在我的程序中展示这件作品.",
+    "event-1740401.08": "哦！嘿，@！, @!$h#$b#对不起，我们没有在那里看到你。我们在谈关于店铺的事情.$h",
+    "event-1740401.09": "你想订购东西吗?",
+    "event-1740401.10": "我只是在享受商店谈话.",
+    "event-1740401.11": "我可以得到一盘意大利面吗?",
+    "event-1740401.12": "偷听很不礼貌，你知道!$h",
+    "event-1740401.13": "哦！当然，我会帮你放进去的.",
+    "event-1740401.14": "我不知道你对艺术这么感兴趣, @.",
+    "event-1740401.15": "是的, @ 不久前给了我一些建议，这就是我举办艺术活动的原因.",
+    "event-1740401.16": "嘿, @, 莉亚. 我在想...$3#$b#我想让我的衣服更容易被别人买到。但我真的不知道怎么卖东西.$3",
+    "event-1740401.17": "这很棘手，是吧?$2#$b#这不像艺术，你只能看到它并感受到一些东西..$2#$b#你真的需要能够触摸或看到它们在身体上的动作才能真正了解.",
+    "event-1740401.18": "就是这样!$h#$b#艾米丽，你可以做一场时装秀!$h#$b#举办一场盛大的活动，邀请所有邻近的城镇，把你的衣服卖到人们可以看到的地方，让一两个模特炫耀它们.#$b#如果不出意外，我敢打赌，看到人们对时尚感兴趣会很有趣!",
+    "event-1740401.19": "这是一个非常有趣的想法.$h#$b#我必须认真考虑一下.",
+    "event-1740401.20": "这就是艺术朋友的目的!$h#$b#荣誉艺术和朋友。对吧, @?",
+
+    "event-1740402.01": "Oh, @! 只是我需要的荣誉艺术和朋友。你有时间吗?$h",
+    "event-1740402.02": "我已经开始为时装秀做一些设计了.#$b#{{FashionEmily1}}#$b#但我可以使用一些好的 风格建议.$h#$b#我需要请人为我做模特，但我不确定是谁，我还想以某种方式记录下这个事件..$3#$b#我很想问你，但我感觉你很忙...$s",
+    "event-1740402.04": "为什么不让海莉做模特呢? 谢恩可以对事件进行录像.",
+    "event-1740402.05": "为什么不让亚历克斯做模特？海莉可以拍照.",
+    "event-1740402.06": "我想我不会介意，只要你不把我放在任何奇怪的事情上.$3#$b#为一群人打扮会很有趣.",
+    "event-1740402.07": "...好吧，我应该能说服亚历克斯为你担任模特.#3#$b#拍摄如此丰富多彩的活动应该会很有趣.",
+    "event-1740402.08": "你真是最棒的, 我爱你海莉!",
+    "event-1740402.09": " @. 你真是最棒的.",
+    
+    "event-1740402.03": "昨晚我熬到凌晨2点素描, 哈哈.$4",
+    "event-1740402.03.RSV": "我和仙儿过夜，我们一直画素描到凌晨2点 .$4",
+    
+    "event-1740402.10": "为什么不请伊莎贝尔做模特？谢恩可以对事件进行录像.",
+    "event-1740402.11": "为什么不让杰里克做模特呢？海莉可以拍照.",
+    "event-1740402.12": "什么，你是担心我感到被冷落还是什么?$3#$b#即使谢恩在录制，我也会拍照，我不可能错过这样一个丰富多彩的活动.#$b#我会为你和伊莎贝尔谈谈，我相信她会感兴趣的。.",
+    "event-1740402.13": "好吧，我可以为你说服杰里克.$3#$b#拍摄这么多彩的活动肯定很有趣。.#$b#我敢肯定杰里克会乐意当模特，不用费多大劲说服他.$h",
+
+    "event-1740403.01": "早上好, @! 你的农场看起来很漂亮.#$b#真希望我有更多借口来常常拜访!$1",
+    "event-1740403.02": "其实我想向你求助，需要一些为了时装秀所需的材料.#$b#我本来可以在公告板上发布请求的，但是你在佩星露谷是最可靠的人，对这类事情很擅长.#$b#我会为你提供报酬的！有了你的帮助，我相信我们可以将这个时装秀变成现实!$1",
+
+    "event-1740404.01": "\"嘘, poke!\"",
+    "event-1740404.02": "\"在这边, poke! 这边!\"",
+    "event-1740404.03": "这是一个盒子...?",
+    "event-1740404.04": "Poke.",
+    "event-1740404.05": "嗨, poke. 我很高兴见到你.",
+    "event-1740404.06": "我喜欢盒子。很舒适，是个好藏身处!$h",
+    "event-1740404.07": "我听说镇上要举办时装秀。我也想卖东西，但是..#$b#我觉得村民们会害怕, poke.$2",
+    "event-1740404.08": "你可以戴个伪装.",
+    "event-1740404.09": "我觉得你没问题.",
+    "event-1740404.10": "谢谢, poke. 我会考虑的.$3#$b#农夫也做衣服吗?",
+    "event-1740404.11": "农夫会帮忙？我也会帮忙, poke.[428][428]",
+    "event-1740404.12": "我会去看秀的。希望很有趣, poke.",
+    
+    "event-1740404.13": "谢谢, poke. 我回考虑的--",
+    "event-1740404.14": "大哥哥!$5",
+    "event-1740404.15": "难道不是你告诉过我 @ 是可信赖的吗？?$5#$b#且并不是所有人类都像那个大坏蛋莫里斯那样可怕吗?$5",
+    "event-1740404.16": "玫瑰... poke.$2",
+    "event-1740404.17": "我觉得你应该去！你的帽子是我见过最棒的，而且那些人类穿上任何一顶都会非常可爱.$1#$b#如果有帮助的话，我也会去!$1",
+    "event-1740404.18": "好的, poke.$3#$b#农夫也做衣服吗?",
+    "event-1740404.19": "农夫会帮忙？我也会帮忙, poke.[428]",
+    "event-1740404.20": "请再收下这些吧! [428]#$b#谢谢你对我大哥哥那么好.[428]$h",
+    "event-1740404.21": "我们会去看秀的。希望很有趣, poke.",
+
+    // FESTIVAL NAMES
+    //--------------
+
+    "Emily.Fashion.Show": "芬吉尔时装秀",
+    "Fashion.Festival": "时尚节",
+
+    // FESTIVAL DIALOGUE
+    //------------------
+
+    // Misc
+
+    "Festival.FashionShow.Event": "是否开始时装秀？艾米莉已经准备好了.",
+    "Festival.FashionShow.Yes": "开始.",
+    "Festival.FashionShow.No": "不.",
+
+    // Main Event (HALEY)
+    "Festival.FashionShow.01": "请注意#$b#我们准备开始了!$1",
+    "Festival.FashionShow.02": "加油艾米丽!",
+    "Festival.FashionShow.03": "非常感谢大家今天出席，你们的支持意义非凡.#$b#我想向大家展示一些我设计的重点作品.#$b#同时，我要感谢海莉同意为大家展示我的设计，并感谢谢恩为我们录制了这个活动.#$b#请上台，海莉!",
+    "Festival.FashionShow.04": "我将这个系列称为“翠绿梦想家”它展现了温暖的色调和自然灵感的图案”.#$b#第一套服装是“向日葵幻想'.",
+    "Festival.FashionShow.05": "这件作品由丝绸制成的大理石染色的金盏花色长袍组成，拥有飘逸的铃袖和棕褐色的无肩带连衣裙.",
+    "Festival.FashionShow.06": "令人瞩目!",
+    "Festival.FashionShow.07": "流动感真好!",
+    "Festival.FashionShow.08": "多么大胆!",
+    "Festival.FashionShow.09": "谢谢你，海莉！这套作品现在接受订购.",
+    "Festival.FashionShow.10": "第二套是“草原幻想”请告诉我们更多，海莉!$1",
+    "Festival.FashionShow.11": "这件桃色的长外套实际上是用蘑菇皮革制成的，我甚至不知道这种材料的存在！!$1#$b#而这件帝王腰连衣裙是薄纱制成的，颜色是薄荷绿，上面有花朵图案.",
+    "Festival.FashionShow.12": "太惊人了!",
+    "Festival.FashionShow.13": "如此多样的图案!",
+    "Festival.FashionShow.14": "喜欢那个颜色!",
+    "Festival.FashionShow.15": "所有这些服装都可以按照您的尺寸定制。现在，最后一个，也是我最喜欢的……“紫罗兰幻想”$1#$b#海莉，开始吧!$1",
+    "Festival.FashionShow.16": "这是一件紫罗兰色的褶边连衣裙，上面有洋红色的花纹图案，肩膀上装饰有金色的菊花图案!#$b#领口是半浮贴的，穿起来感觉非常舒服.$1",
+    "Festival.FashionShow.17": "我想要两套!",
+    "Festival.FashionShow.18": "太棒了!",
+    "Festival.FashionShow.19": "你穿着真漂亮!!",
+    "Festival.FashionShow.20": "谢谢大家!#$b#这些都是我今天要展示的作品。它们都可以根据您的尺寸定制，并且我现在有很多作品出售!#$b#如果您需要定制设计，请随时来找我!",
+    "Festival.FashionShow.21": "多么有趣又美丽的活动!",
+    "Festival.FashionShow.22": "艾米丽在时尚方面有着光明的未来.",
+
+    // Main Event (ALEX)
+    "Festival.FashionShow.23": "我将这个系列称为“色彩衡量”这一系列服装的版型休闲舒适，但色彩对比鲜明，第一套服装是“对比并行”.",
+    "Festival.FashionShow.24": "这是，呃...$7#$b#%亚历克斯似乎在手上检查了一些笔记.#$b#一件靛蓝色的闪光丝绸连衣裙，带有一条珍珠色条纹和偏移拉链领，裤子是杏色的，裤腿上有花边装饰.$9",
+    "Festival.FashionShow.25": " 我喜欢这些线条!",
+    "Festival.FashionShow.26": "锋利!",
+    "Festival.FashionShow.27": "太大胆了!",
+    "Festival.FashionShow.28": "谢谢你，亚历克斯！这套作品现在接受订购.",
+    "Festival.FashionShow.29": "第二套是“中间着色”。（亚历克斯，你做得很棒！）$1",
+    "Festival.FashionShow.30": "这件是天然色的羊毛，带有橘色的领口，边缘装饰有孔雀石和海蓝宝石.$9#$b#裤子！呃，它们是用缎子做的!$7",
+    "Festival.FashionShow.31": "看起来很舒服!",
+    "Festival.FashionShow.32": "我要预订!",
+    "Festival.FashionShow.33": "很时髦!",
+    "Festival.FashionShow.34": "所有这些服装都可以按照您的尺寸定制。现在，最后一个，也是我最喜欢的……“饱和比例”!$1#$b#亚历克斯，开始吧!$1",
+    "Festival.FashionShow.35": "没错。这个帽衫是用回收的绒毛制成的，袖子上还有彩虹图案。裤子是灰蓝色的.$9#$b#它穿起来其实很舒适.$1",
+    "Festival.FashionShow.36": "好样的，亚历克斯!",
+    "Festival.FashionShow.37": "我要预订!",
+    "Festival.FashionShow.38": "很棒的图案!",
+    "Festival.FashionShow.39": "谢谢大家!#$b#这些都是我今天要展示的作品。它们都可以根据您的尺寸定制，并且我现在有很多作品出售!#$b#如果您需要定制设计，请随时来找我!",
+    "Festival.FashionShow.40": "多么有趣又美丽的活动!",
+    "Festival.FashionShow.41": "艾米莉在时尚方面有着光明的未来.",
+    "Festival.FashionShow.42": "非常感谢大家今天出席。你们的支持意义非凡.#$b#我想向大家展示一些我设计的重点作品。.#$b#同时，我要感谢亚历克斯同意为大家展示我的设计，并感谢海莉为我们录制了这个活动.#$b#请上台，亚历克斯!",
+
+    // Main Event (JERIC)
+    "Festival.FashionShow.43": "非常感谢大家今天出席。你们的支持意义非凡.#$b#我想向大家展示一些我设计的重点作品.#$b#同时，我要感谢杰里克同意为大家展示我的设计，并感谢海莉为我们录制了这个活动.#$b#请上台 杰里克!",
+    "Festival.FashionShow.44": "我将这个系列称为“城市秀台”。这是一系列半休闲装，灵感来自祖祖市.",
+    "Festival.FashionShow.45": "这是棉混纺的浅棕色夹克，搭配一件黄褐色的高腰七分裤.#$b#向大家展示您的专业风采吧！!$7",
+    "Festival.FashionShow.46": "太有范儿了!",
+    "Festival.FashionShow.47": "流畅的线条!",
+    "Festival.FashionShow.48": "我喜欢这些线条!",
+    "Festival.FashionShow.49": "谢谢你，杰里克！这套作品现在接受订购.",
+    "Festival.FashionShow.50": "第二套是“自然裙摆”。.#$b#杰里克，来介绍一下!$1",
+    "Festival.FashionShow.51": "没问题，女士.$7#$b#这套服装的焦点是这件橄榄色的斜纹织物大衣，上面有一种高对比度的条纹图案，暗示着你可能在城市里发现的野生动物.#$b#它搭配了一件木炭色的牛仔衬衫和宽松的棉质裤子.",
+    "Festival.FashionShow.52": "看起来很舒服!",
+    "Festival.FashionShow.53": "好帅气!",
+    "Festival.FashionShow.54": "展示得不错!",
+    "Festival.FashionShow.55": "所有这些服装都可以按照您的尺寸定制。现在，最后一个，也是我最喜欢的……“变幻天际”!$1#$b#杰里克，来介绍一下!$1",
+    "Festival.FashionShow.56": "这件羊毛夹克上面印有手工刺绣的火与冰图案。搭配一件高领短上衣和斜纹牛仔裤.#$b#您为了这么好的腹肌，为什么不展示出来呢?$7",
+    "Festival.FashionShow.57": "我爱死了!",
+    "Festival.FashionShow.58": "刺绣真棒!",
+    "Festival.FashionShow.59": "好有力量!",
+    "Festival.FashionShow.60": "谢谢大家!#$b#这些都是我今天要展示的作品。它们都可以根据您的尺寸定制，并且我现在有很多作品出售！!#$b#如果您需要定制设计，请随时来找我!",
+    "Festival.FashionShow.61": "多么有趣又美丽的活动!",
+    "Festival.FashionShow.62": "艾米莉在时尚方面有着光明的未来.",
+
+    // Main Event (YSABELLE)
+    "Festival.FashionShow.63": "非常感谢大家今天出席。你们的支持意义非凡.#$b#我想向大家展示一些我设计的重点作品.#$b#同时，我要感谢伊莎贝尔同意为大家展示我的设计，并感谢海莉为我们录制了这个活动。.#$b#请上台，伊莎贝尔!",
+    "Festival.FashionShow.64": "我将这个系列称为“元素舞者”这些是受到古典元素启发的正式服装，第一套服装是“柔美烈焰”.",
+    "Festival.FashionShow.65": "这件朱红色低胸连身裙有金色领章和手工刺绣的金色星芒图案，搭配一件托斯卡纳黄色的背心.$8",
+    "Festival.FashionShow.66": "美丽!",
+    "Festival.FashionShow.67": "色彩太惊艳了!",
+    "Festival.FashionShow.68": "多么精致的细节!",
+    "Festival.FashionShow.69": "谢谢你，伊莎贝尔！这套作品现在接受订购.",
+    "Festival.FashionShow.70": "第二套是“优雅西风”.#$b#伊莎贝尔，来介绍一下$1",
+    "Festival.FashionShow.71": "当然，艾米丽.$11#$b#优雅西风是一套珍珠雪纺连体裤，搭配附带的双层围巾，上面还配有一件带肩章的薰衣草色亚麻夹克.$8",
+    "Festival.FashionShow.72": "色彩搭配太漂亮了!",
+    "Festival.FashionShow.73": "太令人惊叹了!",
+    "Festival.FashionShow.74": "优雅!",
+    "Festival.FashionShow.75": "所有这些服装都可以按照您的尺寸定制。现在，最后一个，也是我最喜欢的……“水中风华”!$1#$b#伊莎贝尔，开始吧!$1",
+    "Festival.FashionShow.76": "这是一件露肩的宝石蓝色缎面美人鱼裙，胸前有天蓝色亮片装饰.$8#$b#它附带有一件连接的及地长披风，上面有银色泡沫刺绣和珍珠.$8#$b#这是完美的服装，既能让你美丽动人，又能设立界限。.",
+    "Festival.FashionShow.77": "美得令人窒息!",
+    "Festival.FashionShow.78": "气势逼人!",
+    "Festival.FashionShow.79": "如女王一般!",
+    "Festival.FashionShow.80": "谢谢大家!#$b#这些都是我今天要展示的作品。它们都可以根据您的尺寸定制，并且我现在有很多作品出售！#$b#如果您需要定制设计，请随时来找我!",
+    "Festival.FashionShow.81": "多么有趣又美丽的活动!",
+    "Festival.FashionShow.82": "艾米莉在时尚方面有着光明的未来.",
+
+    // Year 2+ Variant Intro/Outro
+    
+    "Festival.FashionShow.03.Y2": "非常感谢大家今天出席。你们的支持意义非凡.#$b#我想开始今天的活动，先展示一些我设计的重点作品，接下来还有其他众多天才设计师的参与.#$b#同时，我要感谢海莉同意为大家展示我的设计，并感谢她为我们录制了这个活动e.#$b#请上台，海莉!",
+
+    "Festival.FashionShow.20.Y2": "谢谢大家!#$b#这些都是我今天要展示的作品。它们都可以根据您的尺寸定制，并且我现在有很多作品出售!#$b#如果您需要定制设计，请随时来找我!#$b#接下来是..",
+
+    "Festival.FashionShow.42.Y2": "T非常感谢大家今天出席。你们的支持意义非凡.#$b#我想通过展示我的一些亮点作品来开始今天的活动，接下来是今天加入我们的一些才华横溢的设计师.#$b#同时，我要感谢亚历克斯同意为大家展示我的设计，并感谢海莉为我们录制了这个活动.#$b#请上台，亚历克斯!",
+
+    "Festival.FashionShow.39.Y2": "谢谢大家！#$b#这些都是我今天要展示的作品。它们都可以根据您的尺寸定制，并且我现在有很多作品出售!#$b#如果您需要定制设计，请随时来找我!#$b#接下来是他们的展示作品..",
+
+    "Festival.FashionShow.43.Y2": "非常感谢大家今天出席。你们的支持意义非凡.#$b#我想开始今天的活动，先展示一些我设计的重点作品，接下来还有其他众多天才设计师的参与.#$b#同时，我要感谢杰里克同意为大家展示我的设计，并感谢海莉为我们录制了这个活动.#$b#请上台，杰里克!",
+
+    "Festival.FashionShow.60.Y2": "谢谢大家!#$b#这些都是我今天要展示的作品。它们都可以根据您的尺寸定制，并且我现在有很多作品出售!#$b#如果您需要定制设计，请随时来找我!#$b#接下来是...",
+
+    "Festival.FashionShow.63.Y2": "非常感谢大家今天出席。你们的支持意义非凡.#$b#我想通过展示我的一些亮点作品来开始今天的活动，接下来是今天加入我们的一些才华横溢的设计师.#$b#同时，我要感谢伊莎贝尔同意为大家展示我的设计，并感谢海莉为我们录制了这个活动.#$b#请上台，伊莎贝尔!",
+
+    "Festival.FashionShow.80.Y2": "谢谢大家!#$b#这些都是我今天要展示的作品。它们都可以根据您的尺寸定制，并且我现在有很多作品出售!#$b#如果您需要定制设计，请随时来找我!#$b#接下来是他们的展示作品...",
+
+    // Vanilla
+
+    "Festival.FashionShow.Emily": " @! 哇，事情真的很忙，但是很有趣!$1#$b#你觉得大家准备好开始了吗？?",
+    "Festival.FashionShow.Lewis": "能在鹈鹕镇举办这样一场大秀我感到非常高兴，这对当地士气有好处。.$1",
+    "Festival.FashionShow.Marnie": "%玛尼对着一些大号的连衣裙痴痴地看着.#$b#或许我只会给贾斯挑选一些可爱的东西.$2",
+    "Festival.FashionShow.Jodi": "或许我只会给贾斯挑选一些可爱的东西.#$b#或许我也会考虑给自己买点东西作为奖励.$1",
+    "Festival.FashionShow.Caroline": "米莉选择的颜色都很舒缓，看着她的衣服真的很放松.$1",
+    "Festival.FashionShow.Sam": "艾米莉的设计挺酷的.#$b#你觉得她能给我们做些乐队的制服吗?$10",
+    "Festival.FashionShow.Abigail": "你觉得艾米莉能为我设计一些冒险装备吗?#$b#我会委托她的，当然！之前我也委托过几个艺术品，和艺术家一起合作总是很棒的体验.$h",
+    "Festival.FashionShow.Vincent": "这是个派对，游戏在哪里?$3",
+    "Festival.FashionShow.Kent": "全家人看起来玩得很开心.$1#$b#你……你觉得乔迪会喜欢那些裙子吗？?",
+    "Festival.FashionShow.Haley": " @现在不行，我正想着怎么给这张照片加上灯光效果.",
+    "Festival.FashionShow.Gus": "活动结束后，我会给艾米莉准备一顿丰盛的饭菜。她真的很努力！!$1",
+    "Festival.FashionShow.Harvey": "我对时尚没什么眼光……你觉得这些衣服有没有适合我的, @?",
+    "Festival.FashionShow.Maru": "你知道吗，时尚有它自己的科学和数学.$3#$b#衣服的折叠和流动都取决于布料的角度和形状.",
+    "Festival.FashionShow.Pierre": "我本来想设一个小卖部的，但是…...$2#$b#今天是艾米丽的重要日子，我不想分散人们的注意力.",
+    "Festival.FashionShow.Pam": "我对时尚一窍不通，但是艾米丽是个好孩子，我至少应该过来看看。$1#$b#你觉得潘妮会喜欢那些小手镯吗?",
+    "Festival.FashionShow.Penny": "艾米莉的衣服都好可爱！!$1#$b#虽然我们买不起奢侈品..$2",
+    "Festival.FashionShow.Elliott": "能看到艾米莉这样向大家展示自己的艺术真是令人感动.$1",
+    "Festival.FashionShow.Willy": "你觉得她有没有能经得住海水考验的衣服?$1",
+    "Festival.FashionShow.Gunther": "我打算为镇上的档案记录一下这个节日.#$b#历史不只是远古时期的事物.",
+    "Festival.FashionShow.Marlon": "我总是确保参加镇上的所有节日，即使是新的.",
+    "Festival.FashionShow.Demetrius": "慢慢看，亲爱的，如果你看中了什么，我会买的.$1",
+    "Festival.FashionShow.Robin": "我有点年纪大了，不太适合穿这么花哨.$4#$b#不过，看起来有些衣服质地很结实，或许....",
+    "Festival.FashionShow.Sebastian": "希望妈妈会喜欢找到自己喜欢的东西.$1#$b#我吗？不，艾米莉的颜色对我来说太亮了.",
+    "Festival.FashionShow.Clint": "这……这样好看吗，@？不会看起来奇怪吧？?$6",
+    "Festival.FashionShow.Evelyn": "看到镇上的每个人都为了艾米莉聚在一起真是太可爱了.$1",
+    "Festival.FashionShow.George": "哼，人们像公鸡一样昂首阔步，我对此不感兴趣.#$b#至少天气很好.",
+    "Festival.FashionShow.Alex": "一件露出手臂的衣服会很好.#$b#你也应该挑一些能展现你最好一面的衣服, @.",
+    "Festival.FashionShow.Jas": "一切都太漂亮了！就像一片花海!$1",
+    "Festival.FashionShow.Leah": "看到艾米莉这样的艺术家的作品真是让人受到鼓舞.#$b#我要连续几天创作下去!$1",
+    "Festival.FashionShow.Linus": "这里有很多人..$2#$b#但艾米莉对我很友善，我也想支持她。.$1",
+    "Festival.FashionShow.Sandy": "我为了这个特意从沙漠来的！我太兴奋了!$1",
+    "Festival.FashionShow.Wizard": "镇上居民的日常事务对我来说不感兴趣.#$b#但有人需要确保天气晴朗.",
+    "Festival.FashionShow.Shane": "艾米丽真棒，对她感到高兴.",
+
+    /* Year 2+    
+    "Festival.FashionShow.Jodi.Y2": "Now that I think about it, Emily always was creative as a child.#$b#I wonder if her parents know how talented she is? They must be proud.$1",*/
+
+
+    // Participants
+    "Festival.FashionShow.Jeric.inshow": "嘿，@！稍等一下，希望你准备好看到最棒的模特上场!$7",
+    "Festival.FashionShow.Haley.inshow": "当我登上舞台的时候，@，我希望看到你坐在前排中央.#$b#你会被惊艳到的!$1",
+    "Festival.FashionShow.Alex.inshow": "在这么多人面前展示衣服，我有点紧张....$2#$b#我只需要想象他们都穿着内衣，对吧?",
+    "Festival.FashionShow.Ysabelle.inshow": "很高兴能帮忙当模特，我在人群面前有很多经验，这一定会顺利进行的.$1",
+    "Festival.FashionShow.Shane.inshow": "我真不敢相信艾米莉让我来录制她的秀…...#$b#好吧，谢恩，别把这搞砸了.$2",
+
+    // Ridgeside
+
+    "Festival.FashionShow.Jeric": "只是随便看看，@？我觉得其中一些款式会非常适合你.$1",
+    "Festival.FashionShow.Faye": "我太兴奋了，等不及看到艾米莉的秀!$1#$b#我正在做笔记，为未来的设计积累灵感.",
+    "Festival.FashionShow.Corine": "我对时尚不太了解，但这些衣服真漂亮.$1",
+    "Festival.FashionShow.Ian": "肖恩和我帮忙搭建了舞台.#$b#虽然时间有点仓促，但进展得非常快!$1",
+    "Festival.FashionShow.Sean": "@, 红色和蓝色，你觉得哪个颜色更适合我?$1",
+    "Festival.FashionShow.Blair": "这些服装太漂亮了……我很想穿其中之一去花舞会跳舞!",
+    "Festival.FashionShow.Irene": "我提前准备好了所有烹饪工作，这样我就可以溜过来一会儿.#$b#真是一场视觉盛宴!$1",
+    "Festival.FashionShow.Maddie": "这些发夹真可爱!$1#$b#@! 你在这里待了多久了?$3",
+    "Festival.FashionShow.Daia": "老实说, @.#$b#你觉得这些衣服中哪一件更适合我用来勾引你?$1",
+    "Festival.FashionShow.Kiarra": "表弟！有没有看到与你个人风格相符的款式?#$b#我自己更喜欢男士风格.$1",
+    "Festival.FashionShow.Ysabelle": "你看到这些裙子了吗？太漂亮了！我一定会带一件回家的.$h",
+
+    // Always Raining in the Valley
+
+    "Festival.FashionShow.Sterling": "回到我年轻时，没人为了社区举办这样的活动.#$b#人们在过去的几年里真的聚集在一起，这令人难以置信.$1#$b#在很大程度上，要归功于你，帅哥.#$e#此外，免费食物真是太棒了.$10",
+    "Festival.FashionShow.Sterling_y2": "信不信由你，我其实可以欣赏时装的艺术性.$10#$b#我觉得艾米丽每年的时装秀都做得非常好.#$e#你以为我这样穿得像个浪漫小说中的坏男孩只是无心之举?$10#$e#我年轻时比较直率，你可以问皮埃尔.#$b#%皮埃尔在斯特林旁边咕哝着.",
+    "Festival.FashionShow.Mia": "每当我想到我来农村生活，我总以为自己失去了一些东西，但实际情况完全不是这样.$1#$b#这不只是好，这是绝妙至极——比好还好!#$e#我在城里的朋友永远也做不到.$5#$b#反正，谁需要呆板的T台?$10#$e#%米娅梦幻般地叹了口气.#$b#我喜欢漂亮的时尚...$6#$e#亨利！我们来近距离看看衣服吧.",
+    "Festival.FashionShow.Henry.R1": "我不确定我以前是否曾经感到过如此的局外.$3#$b#但至少我知道米娅似乎玩得很开心。我对这种活动并不了解，但她的热情如此感染人，几乎让我想亲自登上舞台.$3#$b#不过，这永远不会发生，最好是忘记我说过的话，这个对话从未发生过，只是去为米娅感到兴奋吧.$6#$e#",
+    "Festival.FashionShow.Henry.R2": "真是太神奇了，看到人们在我从未考虑过的事物上如此有创意.$0#$b#对我来说，衣服一直只是实用的东西，除非是特殊场合，我从未追求过太花哨或太炫目的衣服。虽然米娅尽力让我感兴趣，但我对此并不感兴趣.$3#$b#...等一下，那边有卖牛仔帽的吗?!",
+
+    "Festival.FashionShow.Sterling.SterlingMarried": "哇哦，看来这里的最美丽的闪耀之星就是你了.$10#$b#你为什么不坐下，亲爱的？我去烤架上拿些食物.$0#$e#我很快就回来，在此期间，你为什么不继续我刚才告诉皮埃尔的故事呢？关于上次我们一起骑马时发生的事情.$12",
+    "Festival.FashionShow.Henry.SterlingMarried": "堂兄，能帮我保守一个秘密吗?$0#$b#我跟着米娅四处逛了逛，看到一件我认为斯特拉会喜欢的东西.$1#$b#他在农场帮助了你，对吗？所以当我看到这顶太阳花颜色的帽子时，我就忍不住给他买了一顶.$10#$b#我从来不擅长送礼物，但……我希望他会喜欢.$1",
+
+    "Festival.FashionShow.Mia.FashionShowComplete": "@! @! 你听说了吗?!$1#$b#等一下，你准备好了吗?$1#$b#%米娅深深地吸了一口气.#$b#我要做模特儿了!$3#$b#我真是太激动了。我只是想在等待中跳舞.$1#$e#那个史黛西，说我在九年级时长得像个丑陋的男孩.$7#$e#亨利帮我拍一张好照片，我们要把它作为今年的灵魂节明信片寄给史黛西和其他人.$10",
+
+    "Festival.FashionShow.Sterling.FashionShowComplete.SterlingMarried": "亲爱的，喜欢这个节日吗?#$b#米娅今年当模特，你没听到她的幸福尖叫声吗.$10#$b#我们打算在活动后给她买些鲜花来支持她.#$e#%斯特林将你拉进一个短暂的会议.#$b#要是你问我，他们应该求你也当模特.$10$#b#但他们可能不希望其他模特退缩.$0",
+    "Festival.FashionShow.Henry.R1.FashionShowComplete": "我不知道我是否曾见过米娅因为一件事情而如此兴奋，你真的可以看出这个活动对她意味着什么.$1#$b#即使我开始为表演而兴奋！而且我大多数时间都不明白这些事情的进行，她的能量是如此的具有感染力，以至于我几乎想上台表演!$10#$b#...其实，我永远也不会这样做，忘了我说的任何话，只要为米娅感到兴奋就行了.$4",
+    "Festival.FashionShow.Henry.R2.FashionShowComplete": "嘿，表亲...你认为我能借用斯特林一下吗?$#$b#没什么大不了的事，只是...我一个人很难跟上米娅，浏览、购物、准备上台表演...我有点筋疲力尽.$6#$b#但是别误解!$11#$b#一切都很有趣。看到Mia登台表演...真的很特别。我很高兴大家都看到她是一个明星.$10#$但现在我真的需要一小段时间休息.$6",
+
+    // Jorts and Jean
+
+    "Festival.FashionShow.JortsCat": "艾米丽看起来很开心！我很高兴每个人都为她出现!$1",
+    "Festival.FashionShow.JeanCat": "无论如何，如果可以的话，总是选择本地购物，@正如您所看到的，这确实对您认识的人的生活产生了影响。.$1",
+
+    // Marigold
+
+    "Festival.FashionShow.Marigold": "%Marigold is attentive, but seems to be enjoying the activity.",
+    "Festival.FashionShow.Marigold.Talk": "There are so many happy smells in town today! But I am working hard.",
+
+    // Yri and Charles
+    "Festival.FashionShow.Yri": "正在专心观察，似乎很享受这个活动.$1",
+    "Festival.FashionShow.Charles": "我对时尚一无所知，但我可以说模特选择得很棒，她们看起来真是令人惊艳.",
+
+    "Yri.spring.01": "我喜欢这件裙子，有时候我会穿上它，只是为了在里面转来转去，因为它太轻盈、飘逸了。.$h#$e#希望查理斯不会觉得我很奇怪.$3",
+    "Yri.spring.02": "当我在时装秀上看到这件裙子时，我就知道我需要它，看看这个图案和颜色！光是看着它就让我感到快乐.$h",
+  
+    "Yri.summer.01": "@，我好像从没问过，你在春天的时装秀摊位上买了什么?#$b#我买了这件裙子，叫做紫罗兰幻想.$h",
+    "Yri.summer.02": "艾米丽真是个善良的人，她非常慷慨，免费为我调整了这件裙子.$h#$e#如果她需要家务帮手，我会义务提供查理斯的服务.#$b#开个玩笑，我不会这么对他的.$h",
+  
+    "Yri.fall.01": "嗯..#$b#你知道我刚刚注意到了什么？！我实际上可以说我穿着设计师精心裁量的衣服.$h#$e#我得告诉查理斯.$h",
+    "Yri.fall.02": "其实挺可惜，我没能说服查理斯买一些这些衣服，他穿起来肯定很帅.$s#$e#他对时尚不太在意，所以只有旧衣服坏了才会买新的.$s",
+
+
+    "Charles.spring.01": "由莉买了几条艾米丽的裙子，起初我有些担心，毕竟...听起来设计师的衣服很贵.#$b#但实际上价格很合理，而且也让由莉很开心，所以是个双赢.$h",
+    "Charles.spring.02": "你有看到莉很今天穿的那条裙子吗？她之前穿上它时显得特别可爱，还跳了个小快舞.$4",
+  
+    "Charles.summer.01": "我对时尚一无所知，但我知道由莉穿什么都很可爱，这就是我需要知道的一切.$h",
+    "Charles.summer.02": "由莉穿上了在时装秀上买的裙子，她非常兴奋，已经在谈论下一场时装秀了.$h#$b#我最好开始存钱了.$h",
+  
+    "Charles.fall.01": "由莉告诉我艾米丽已经在准备明年的时装秀了.#$b#她真的很专注，我很高兴她的生意正在慢慢起步.$h",
+    "Charles.fall.02": "你好，@，你能确保由莉不冷吗?#$b#天气越来越冷，但她不理我，坚持说艾米丽的衣服保暖效果很好.$3",
+
+    // Special Orders
+
+    "SpecialOrder.Emily_FashionShow_Name": "时尚助力",
+    "SpecialOrder.Emily_FashionShow_Body": "我有一些惊人的新设计构想，计划在时装秀上展示，但我需要大量的材料来制作足够的服装进行销售，你能帮忙带来一些布料和天然染料原料吗?",
+    "SpecialOrder.Emily_FashionShow_Objective0": "将10个布料交付给艾米丽的缝纫台.",
+    "SpecialOrder.Emily_FashionShow_Objective1": "将3个红色染料原料交付给艾米丽的缝纫台.",
+    "SpecialOrder.Emily_FashionShow_Objective2": "将3个橙色染料原料交付给艾米丽的缝纫台.",
+    "SpecialOrder.Emily_FashionShow_Objective3": "将3个黄色染料原料交付给艾米丽的缝纫台.",
+    "SpecialOrder.Emily_FashionShow_Objective4": "将3个绿色染料原料交付给艾米丽的缝纫台.",
+    "SpecialOrder.Emily_FashionShow_Objective5": "将3个蓝色染料原料交付给艾米丽的缝纫台.",
+    "SpecialOrder.Emily_FashionShow_Objective6": "将3个紫色染料原料交付给艾米丽的缝纫台.",
+    
+    "SpecialOrder.Emily_SpringFashion_Name": "春日新风尚",
+    "SpecialOrder.Emily_SpringFashion_Body": "春天的鲜花给我带来了灵感，我想要设计出新的服装！你能带来染料原料和5件不同的旧衬衫供我重新利用吗？请带来非常规的粉红色和绿色衬衫!",
+    "SpecialOrder.Emily_SpringFashion_Objective0": "将5件粉红色或绿色衬衫交付给艾米丽的缝纫台.",
+    "SpecialOrder.Emily_SpringFashion_Objective1": "将10个粉红色染料原料交付给艾米丽的缝纫台.",
+    "SpecialOrder.Emily_SpringFashion_Objective2": "将10个绿色染料原料交付给艾米丽的缝纫台.",
+    
+    "SpecialOrder.Emily_SummerFashion_Name": "夏日新风尚s",
+    "SpecialOrder.Emily_SummerFashion_Body": "温暖的海风给我带来了灵感，我想要设计出新的服装！你能带来染料原料和5件不同的旧衬衫供我重新利用吗？请带来非常规的浅蓝色和黄色衬衫!",
+    "SpecialOrder.Emily_SummerFashion_Objective0": "将5件浅蓝色或黄色衬衫交付给艾米莉的缝纫台.",
+    "SpecialOrder.Emily_SummerFashion_Objective1": "将10个浅蓝色染料原料交付给艾米莉的缝纫台.",
+    "SpecialOrder.Emily_SummerFashion_Objective2": "将10个黄色染料原料交付给艾米莉的缝纫台.",
+    
+    "SpecialOrder.Emily_FallFashion_Name": "秋日新风尚",
+    "SpecialOrder.Emily_FallFashion_Body": "飘落的枯叶给我带来了灵感，我想要设计出新的服装！你能带来染料原料和5件不同的旧衬衫供我重新利用吗？请带来非常规的橙色和红色衬衫!",
+    "SpecialOrder.Emily_FallFashion_Objective0": "将5件橙色或红色衬衫交付给艾米莉的缝纫台.",
+    "SpecialOrder.Emily_FallFashion_Objective1": "将10个橙色染料原料交付给艾米莉的缝纫台.",
+    "SpecialOrder.Emily_FallFashion_Objective2": "将10个橙色染料原料交付给艾米莉的缝纫台.",
+    
+    "SpecialOrder.Emily_WinterFashion_Name": "冬日新风尚",
+    "SpecialOrder.Emily_WinterFashion_Body": "闪耀的新雪给我带来了灵感，我想要设计出新的服装！你能带来染料原料和5件不同的旧衬衫供我重新利用吗？请带来非常规的深蓝色和白色衬衫!",
+    "SpecialOrder.Emily_WinterFashion_Objective0": "将5件深蓝色或白色衬衫交付给艾米莉的缝纫台.",
+    "SpecialOrder.Emily_WinterFashion_Objective1": "将10个深蓝色染料原料交付给艾米莉的缝纫台.",
+    "SpecialOrder.Emily_WinterFashion_Objective2": "将10个深蓝色染料原料交付给艾米莉的缝纫台.",
+
+    // Mail
+    
+    "SpecialOrder.FashionShowLetter.Title": "时尚盛典h",
+    "SpecialOrder.FashionShowLetter.Body": "亲爱的@，^^感谢你的帮助！你送来的布料和染料非常合适。^^我希望你期待着时尚秀——我决定在春天19号的花之舞之前举行，天气暖和宜人。虽然会有很多工作，但我认为会很有趣！^^ - 艾米丽",
+    
+    "SpecialOrder.FashionShowComplete.Title": "时尚秀成功",
+    "SpecialOrder.FashionShowComplete.Body": "亲爱的@，^^我很高兴时尚秀取得了成功！没有你的帮助，我无法做到这一切，再次感谢你！^^希望明年我们也能在同一时间举行时尚秀！^^ - 艾米丽",
+
+}

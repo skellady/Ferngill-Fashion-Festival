@@ -1,0 +1,22 @@
+{
+    "Changes": [
+        // Yri and Charles Post-Festival Dialogue
+        {
+            "LogName": "Yri and Charles Designer Clothes",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Yri, Characters/Dialogue/Charles",
+            "Entries": {
+                "spring_10": "{{i18n:{{TargetWithoutPath}}.spring.01}}",
+                "spring_20": "{{i18n:{{TargetWithoutPath}}.spring.02}}",
+                "summer_10": "{{i18n:{{TargetWithoutPath}}.summer.01}}",
+                "summer_20": "{{i18n:{{TargetWithoutPath}}.summer.02}}",
+                "fall_10": "{{i18n:{{TargetWithoutPath}}.fall.01}}",
+                "fall_20": "{{i18n:{{TargetWithoutPath}}.fall.02}}"
+            },
+            "When": {
+                "HasFlag |contains= FashionShowComplete": true,
+                "HasMod |contains=yri.yri": true
+            }
+        }
+    ]
+}
